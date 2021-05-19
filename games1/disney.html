@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABCD Games | Disney</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script src="https://kit.fontawesome.com/70dca1b869.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
+<style>
+  html *{
+  -webkit-font-smoothing: antialiased;
+}
+/* body{
+  background-color: rgb(192, 198, 255);
+} */
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #b4d523 ,#52eeb2);
+	background-size: 3000% 3000%;
+	animation: gradient 15s ease infinite;
+}
+
+@font-face {
+  font-family: disneyFont;
+  src: url(Disney.ttf);
+}
+
+.h1Class {
+text-align:center;
+  font-family: disneyFont;
+  text-decoration: underline;
+  animation: glow 1s ease-in-out infinite alternate;
+  font-size: 50px;
+}
+
+
+@keyframes glow {
+	from {
+		text-shadow: 0 0 0px #000, 0 0 0px #000, 0 0 0px #fff, 0 0 0px #fff, 0 0 5px #fff, 0 0 0px #fff, 0 0 0px #fff;
+	}
+	
+	to {
+		text-shadow: 1px 1px 15px rgb(238, 86, 149), 0 0 25px rgb(236, 128, 191), 0 0 5px rgb(250, 98, 225);
+	}
+  }
+
+  .cssload-loader {
+	width: 450px;
+	height: 150px;
+	line-height: 150px;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+	font-family: Comic Sans MS;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size:54px;
+	color: white;
+	letter-spacing: 0.2em;
+}
+.cssload-loader::before, .cssload-loader::after {
+	content: "";
+	display: block;
+	width: 45px;
+	height: 45px;
+	background: white;
+	position: absolute;
+	animation: cssload-load 0.81s infinite alternate ease-in-out;
+		-o-animation: cssload-load 0.81s infinite alternate ease-in-out;
+		-ms-animation: cssload-load 0.81s infinite alternate ease-in-out;
+		-webkit-animation: cssload-load 0.81s infinite alternate ease-in-out;
+		-moz-animation: cssload-load 0.81s infinite alternate ease-in-out;
+}
+.cssload-loader::before {
+	top: 0;
+}
+.cssload-loader::after {
+	bottom: 0;
+}
+
+
+
+@keyframes cssload-load {
+	0% {
+		left: 0;
+		height: 90px;
+		width: 45px;
+	}
+	50% {
+		height: 24px;
+		width: 120px;
+	}
+	100% {
+		left: 405px;
+		height: 90px;
+		width: 45px;
+	}
+}
+
+@-o-keyframes cssload-load {
+	0% {
+		left: 0;
+		height: 90px;
+		width: 45px;
+	}
+	50% {
+		height: 24px;
+		width: 120px;
+	}
+	100% {
+		left: 405px;
+		height: 90px;
+		width: 45px;
+	}
+}
+
+@-ms-keyframes cssload-load {
+	0% {
+		left: 0;
+		height: 90px;
+		width: 45px;
+	}
+	50% {
+		height: 24px;
+		width: 120px;
+	}
+	100% {
+		left: 405px;
+		height: 90px;
+		width: 45px;
+	}
+}
+
+@-webkit-keyframes cssload-load {
+	0% {
+		left: 0;
+		height: 90px;
+		width: 45px;
+	}
+	50% {
+		height: 24px;
+		width: 120px;
+	}
+	100% {
+		left: 405px;
+		height: 90px;
+		width: 45px;
+	}
+}
+
+@-moz-keyframes cssload-load {
+	0% {
+		left: 0;
+		height: 90px;
+		width: 45px;
+	}
+	50% {
+		height: 24px;
+		width: 120px;
+	}
+	100% {
+		left: 405px;
+		height: 90px;
+		width: 45px;
+	}
+}
+
+#loverlay{
+  height: 100%;
+  width: 100%;
+  background: #49274A;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+}
+
+.loader{
+display: inline-block;
+position: relative;
+top: 50%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+h3{
+  font-weight: 300!important;
+  font-size: 25px !important;
+}
+
+h4{
+  font-size: 18px !important;
+  font-weight: 300 !important;
+}
+
+.card.card-carousel {
+  border: 0;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border-radius: 6px ;
+  color: rgba(0,0,0,.87);
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.card.card-carousel img{
+  border-radius: 6px;
+}
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+}
+.carousel .carousel-indicators {
+  bottom: 5px;
+}
+.carousel .carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  text-indent: -999px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0,.2);
+  border-radius: 2px;
+}
+.carousel .carousel-indicators .active{
+  margin: 11px 10px; 
+} 
+.carousel .carousel-indicators li {
+  margin: 11px 10px;
+}
+.carousel .carousel-indicators .active {
+  margin-top: 10px;
+  transform: scale(1.5);
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+}
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.carousel-item {
+  position: relative;
+  display: none;
+  align-items: center;
+  width: 100% !important;
+  transition: transform .6s ease;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+.carousel-item.active {
+  display: block;
+}
+.carousel .carousel-caption {
+  padding-bottom: 45px;
+}
+.carousel .carousel-caption .material-icons {
+  position: relative;
+  top: 5px;
+}
+.carousel .carousel-control-next .material-icons{
+  z-index: 5;
+  display: inline-block;
+  font-size: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50px;
+  margin: auto;
+}
+.carousel .carousel-control-prev .material-icons {
+  z-index: 5;
+  display: inline-block;
+  font-size: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50px;
+  margin: auto;
+}
+
+/* ALll gmes */
+.abs,
+h2:after,
+.cards .card figcaption,
+.cards .card:after,
+.news .card figcaption,
+.news .card:after,
+.news .article figcaption {
+  position: absolute;
+}
+.rel,
+h2,
+h2 strong,
+.cards .card,
+.news .card,
+.news .article {
+  position: relative;
+}
+.fix {
+  position: fixed;
+}
+.dfix {
+  display: inline;
+}
+.dib {
+  display: inline-block;
+}
+.db {
+  display: block;
+}
+.dn {
+  display: none;
+}
+.df,
+.cards,
+.news {
+  display: flex;
+}
+.dif {
+  display: inline-flex;
+}
+.dg {
+  display: grid;
+}
+.dig {
+  display: inline-grid;
+}
+.vm,
+h2,
+h2 strong,
+h2 span {
+  vertical-align: middle;
+}
+.fashion body {
+  background: #24282f;
+  font-family: 'Alegreya Sans';
+}
+.wrapper {
+  padding: 15px;
+}
+h2 {
+  padding: 10px;
+  padding-left: 25px;
+  color: #ccc;
+  margin: 0;
+}
+h2 strong {
+  z-index: 2;
+  background: #24282f;
+  padding: 4px 8px;
+}
+h2 span {
+  font-size: 0.7em;
+  color: #aaa;
+  margin-left: 10px;
+}
+ h2:after {
+  content: '';
+    z-index: 1;  
+  /*bottom: 50%;
+  margin-bottom: -2px;
+  height: 2px;
+  left: 0;
+  right: 0;
+  background: #373d47;*/
+} 
+.cards
+ {
+  flex-flow: row wrap;
+  display: flex;
+  justify-content: space-around;
+}
+/* .news{
+  flex-flow: row wrap;
+} */
+.cards .card,
+.news .card {
+  margin: 20px;
+  width: 180px;
+  height: 270px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.8);
+  transform-origin: center top;
+  transform-style: preserve-3d;
+  transform: translateZ(0);
+  transition: 0.3s;
+}
+.cards .card img,
+.news .card img {
+  width: 100%;
+  min-height: 100%;
+}
+.cards .card figcaption,
+.news .card figcaption {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  background: none;
+  color: rgb(36, 5, 5);
+  transform: translateY(100%);
+  transition: 0.3s;
+}
+.cards .card:after,
+.news .card:after {
+  content: '';
+  z-index: 10;
+  width: 200%;
+  height: 100%;
+  top: -90%;
+  left: -20px;
+  opacity: 0.1;
+  transform: rotate(45deg);
+  background: linear-gradient(to top, transparent, #fff 15%, rgba(255,255,255,0.5));
+  transition: 0.3s;
+}
+.cards .card:hover,
+.news .card:hover,
+.cards .card:focus,
+.news .card:focus,
+.cards .card:active,
+.news .card:active {
+  box-shadow: 0 8px 16px 3px rgba(0,0,0,0.6);
+  transform: translateY(-3px) scale(1.05) rotateX(15deg);
+}
+.cards .card:hover figcaption,
+.news .card:hover figcaption,
+.cards .card:focus figcaption,
+.news .card:focus figcaption,
+.cards .card:active figcaption,
+.news .card:active figcaption {
+  transform: none;
+}
+.cards .card:hover:after,
+.news .card:hover:after,
+.cards .card:focus:after,
+.news .card:focus:after,
+.cards .card:active:after,
+.news .card:active:after {
+  transform: rotate(25deg);
+  top: -40%;
+  opacity: 0.15;
+}
+.news .article {
+  overflow: hidden;
+  width: 350px;
+  height: 235px;
+  margin: 20px;
+}
+.news .article img {
+  width: 100%;
+  min-height: 100%;
+  transition: 0.2s;
+}
+.news .article figcaption {
+  font-size: 14px;
+  text-shadow: 0 1px 0 rgba(51,51,51,0.3);
+  color: rgb(160, 11, 11);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 40px;
+  box-shadow: 0 0 2px rgba(0,0,0,0.2);
+  background: rgba(6,18,53,0.6);
+  opacity: 0;
+  transform: scale(1.15);
+  transition: 0.2s;
+}
+.news .article figcaption h3 {
+  color: #3792e3;
+  font-size: 16px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+.news .article:hover img,
+.news .article:focus img,
+.news .article:active img {
+  filter: blur(3px);
+  transform: scale(0.97);
+}
+.news .article:hover figcaption,
+.news .article:focus figcaption,
+.news .article:active figcaption {
+  opacity: 1;
+  transform: none;
+}
+ /* upcoming games */
+.wrapper1  {
+   box-sizing: border-box; 
+  width: 100%;
+   height: 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: orange;  */
+  display: flex;
+  width: 100%;
+  justify-content: center; }
+
+.card1 {
+  width: 500px;
+  height: 400px;
+  border-radius: 15px;
+  padding: 20px;
+  background: white;
+  position: relative;
+  display: block;
+  align-items: center;
+  transition: 0.4s ease-out;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5); }
+  .card1:hover {
+    transform: translateY(20px); }
+    .card1:hover:before {
+      opacity: 1; }
+    .card1:hover .info {
+      opacity: 1;
+      transform: translateY(0px); }
+  .card1:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 0; }
+  .card1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px; }
+  .card1 .info {
+    position: relative;
+    z-index: 3;
+    color: white;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s; }
+    .card1 .info h1 {
+      margin: 0px; }
+    .card1 .info p {
+      letter-spacing: 1px;
+      font-size: 15px;
+      margin-top: 8px; }
+    .card1 .info button {
+      padding: 1rem;
+      outline: none;
+      border: none;
+      border-radius: 3px;
+      background: white;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      
+      transition: 0.4s ease; }
+      .card1 .info button:hover {
+        background: dodgerblue;
+        color: white; }
+.heading{
+  text-align:center ;
+}
+
+
+
+/* disney logio
+@keyframes wave {
+  0%, 100% {
+    transform: skew(0);
+ }
+  50% {
+    transform: skew(0, 15deg);
+ }
+}
+.disney, .disney::before, .disney::after {
+  margin: 0;
+  padding: 0;
+}
+.disney body {
+  display: flex;
+  justify-content: center;
+  background-color: #304ea5;
+}
+.container1 {
+  position: relative;
+  top: -60px;
+  width: 500px;
+  height: 500px;
+}
+.arc {
+  position: absolute;
+  right: -3rem;
+  width: 120%;
+  height: 100%;
+}
+.arc circle {
+  cx: 50%;
+  cy: 100%;
+  r: 53.5%;
+  fill: transparent;
+  stroke-width: 2;
+  stroke: white;
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+  stroke-dasharray: 1870;
+  stroke-dashoffset: 1870;
+  animation: offset 2.5s ease-out 1s forwards;
+}
+@keyframes offset {
+  to {
+    stroke-dashoffset: 0;
+ }
+}
+.castle {
+  background-color: #387fe9;
+}
+.portcullis {
+  position: absolute;
+  left: 41%;
+  bottom: -7%;
+  background-color: #304ea5;
+  border-radius: 50% 50% 0 0 / 50% 50% 0 0;
+  height: 20%;
+  width: 20%;
+  transition: border-radius 0.3s;
+  z-index: 2;
+}
+.portcullis:hover {
+  border-radius: 50%;
+}
+.portcullis:hover::before {
+  background-color: #304ea5;
+  border-radius: 50%;
+  width: 60%;
+  height: 60%;
+}
+.portcullis:hover::after {
+  background-color: #304ea5;
+  border-radius: 50%;
+  width: 60%;
+  height: 60%;
+}
+.portcullis::before {
+  position: absolute;
+  bottom: 67%;
+  right: 65%;
+  content: '';
+  transition: all 0.3s;
+}
+.portcullis::after {
+  position: absolute;
+  bottom: 67%;
+  right: -20%;
+  content: '';
+  transition: all 0.3s;
+}
+.base-1 { 
+  position: absolute;
+  left: 15.5%;
+  bottom: 0;
+  width: 70%;
+  height: 10%;
+} 
+.base-2 {
+  position: absolute;
+  left: 20%;
+  bottom: 9%;
+  width: 65%;
+  height: 7%;
+}
+.base-3 {
+  position: absolute;
+  left: 24%;
+  bottom: 15%;
+  width: 55%;
+  height: 6%;
+}
+.base-4 {
+  position: absolute;
+  left: 24%;
+  bottom: 20%;
+  width: 50%;
+  height: 6%;
+}
+.base-4::after {
+  position: absolute;
+  bottom: 50%;
+  left: 76%;
+  border-top: 0px solid transparent;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 60px solid #387fe9;
+  content: '';
+  display: block;
+}
+.base-tower {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 0px solid transparent;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 60px solid #387fe9;
+}
+.left {
+  bottom: 9.5%;
+   left: 12.5%; 
+}
+.left::after {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  content: '';
+  display: block;
+  transform-origin: right;
+  animation: 0.3s wave 0.2s infinite;
+  background: #387fe9;
+  -webkit-clip-path: polygon(100% 0, 0 47%, 100% 100%);
+  clip-path: polygon(100% 0, 0 47%, 100% 100%);
+  height: 0.6rem;
+  width: 1.2rem;
+}
+.right {
+  bottom: 9.5%;
+  left: 76.5%;
+}
+.right::after {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  content: '';
+  display: block;
+  transform-origin: right;
+  animation: 0.3s wave 0.4s infinite;
+  background: #387fe9;
+  -webkit-clip-path: polygon(100% 0, 0 47%, 100% 100%);
+  clip-path: polygon(100% 0, 0 47%, 100% 100%);
+  height: 0.6rem;
+  width: 1.2rem;
+}
+.mid-tower-left {
+  position: absolute;
+  left: 24%;
+  bottom: 15%;
+  width: 9%;
+  height: 13%;
+}
+.mid-tower-left::after {
+  position: absolute;
+  top: -20%;
+  left: -13px;
+  border-top: 45px solid #387fe9;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-bottom: 0px solid transparent;
+  content: '';
+  display: block;
+}
+.mid-tower-left-roof {
+  position: absolute;
+  left: 22.3%;
+  bottom: 30%;
+  border-top: 0px solid transparent;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 60px solid #387fe9;
+}
+.mid-tower-left-roof::after {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  content: '';
+  display: block;
+  transform-origin: right;
+  animation: 0.3s wave 0.6s infinite;
+  background: #387fe9;
+  -webkit-clip-path: polygon(100% 0, 0 47%, 100% 100%);
+  clip-path: polygon(100% 0, 0 47%, 100% 100%);
+  height: 0.6rem;
+  width: 1.2rem;
+}
+.mid-tower-right {
+  position: absolute;
+  left: 71%;
+  bottom: 20.8%;
+  border-top: 0px solid transparent;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 70px solid #387fe9;
+}
+.mid-tower-right::after {
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+  content: '';
+  display: block;
+  transform-origin: right;
+  animation: 0.3s wave 0.8s infinite;
+  background: #387fe9;
+  -webkit-clip-path: polygon(100% 0, 0 47%, 100% 100%);
+  clip-path: polygon(100% 0, 0 47%, 100% 100%);
+  height: 0.6rem;
+  width: 1.2rem;
+}
+.level-2-tower-left {
+  position: absolute;
+  left: 34%;
+  bottom: 25%;
+  border-top: 0px solid transparent;
+  border-left: 23px solid transparent;
+  border-right: 23px solid transparent;
+  border-bottom: 70px solid #387fe9;
+}
+.level-3-tower {
+  position: absolute;
+  left: 65%;
+  bottom: 26%;
+  width: 5%;
+  height: 12%;
+}
+.level-3-tower-roof {
+  position: absolute;
+  bottom: 37%;
+  right: 28.5%;
+  border-top: 0px solid transparent;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 40px solid #387fe9;
+}
+.keep {
+  position: absolute;
+  left: 42.5%;
+  bottom: 25%;
+  width: 23%;
+  height: 10.5%;
+}
+.side-tower {
+  position: absolute;
+  bottom: 20%;
+  left: 40%;
+  border-top: 40px solid #387fe9;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 0px solid transparent;
+  width: 5px;
+}
+.side-tower.roof {
+  position: absolute;
+  bottom: 38%;
+  left: 41%;
+  border-top: 0px solid transparent;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-bottom: 45px solid #387fe9;
+  width: 0;
+}
+.side-tower.roof::after {
+  position: absolute;
+  bottom: 1%;
+  right: 10%;
+  content: '';
+  display: block;
+  transform-origin: right;
+  animation: 0.3s wave 0.1s infinite;
+  background: #387fe9;
+  -webkit-clip-path: polygon(100% 0, 0 47%, 100% 100%);
+  clip-path: polygon(100% 0, 0 47%, 100% 100%);
+  height: 0.6rem;
+  width: 1.2rem;
+}
+.keep-main {
+  position: absolute;
+  left: 49.3%;
+  bottom: 35%;
+  width: 14%;
+  height: 16%;
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 49%, 50% 49%);
+  clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 49%, 50% 49%);
+}
+.main-side-roof {
+  position: absolute;
+  left: 49.3%;
+  bottom: 43%;
+  border-top: 0px solid transparent;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-bottom: 45px solid #387fe9;
+  width: 0;
+}
+.main-tower {
+  position: absolute;
+  left: 54.7%;
+  bottom: 50%;
+  width: 10%;
+  height: 10%;
+  -webkit-clip-path: polygon(16% 0, 85% 0, 85% 38%, 100% 38%, 86% 100%, 15% 100%, 0 37%, 16% 37%);
+  clip-path: polygon(16% 0, 85% 0, 85% 38%, 100% 38%, 86% 100%, 15% 100%, 0 37%, 16% 37%);
+}
+.main-tower-roof {
+  position: absolute;
+  left: 54.7%;
+  bottom: 59%;
+  border-top: 0px solid transparent;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 45px solid #387fe9;
+  width: 0;
+}
+.main-tower-roof::after {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  content: '';
+  display: block;
+  transform-origin: right;
+  animation: 0.3s wave 0.3s infinite;
+  background: #387fe9;
+  -webkit-clip-path: polygon(100% 0, 0 47%, 100% 100%);
+  clip-path: polygon(100% 0, 0 47%, 100% 100%);
+  height: 0.6rem;
+  width: 1.2rem;
+}*/
+.play{
+  color: whitesmoke;
+background-color: #f80965;
+border-radius: 14px;
+}
+/* .main_heading{
+  display: inline-block;
+  font-family: ;
+  font-size: 10rem;
+  color: white;
+  text-align: center;
+  padding-top: 0px;
+  padding-left: 25%;
+  margin: 0px;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,         -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,         0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+}  */
+/* disney bio */
+.disney_bio {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  color: #ABEC49;
+  font-family: 'Walter Turncoat', cursive;
+}
+
+.logo{
+  fill: #ABEC18;
+  height:80px;
+}
+.section1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+   /* background-color: #130e23;  */
+  height: 100vh;
+  overflow: hidden;
+}
+.disney_bio .text {
+  position: relative;
+  text-align: center;
+ 
+  margin: 10px 40px;
+  max-width: 650px;
+  font-size: 26px;
+}
+.disney_bio .text span{
+  position: relative;
+  display: inline-block;
+}
+
+.author{
+  padding-left: 40%;
+  font-size: 22px;
+}
+
+
+
+ 
+ 
+</style>
+
+</head>
+<body>
+
+
+
+  <!-- <h1 class="main_heading">DISNEY GAMES:</h1> -->
+<!-- <div class="disney" style="display: inline-block;">
+ Hover over the archway -->
+<!-- <div class="container1"> <svg class="arc">
+    <circle> </circle>
+    
+</svg>
+
+<div class="portcullis"> </div>
+<div class="castle base-1"> </div>
+<div class="castle base-2"> </div>
+<div class="castle base-3"> </div>
+<div class="castle base-4"> </div>
+<div class="base-tower left"></div>
+<div class="base-tower right"></div>
+<div class="castle mid-tower-left"></div>
+<div class="mid-tower-left-roof"></div>
+<div class="mid-tower-right"></div>
+<div class="level-2-tower-left"></div>
+<div class="level-2-tower-right"></div>
+<div class="castle level-3-tower"></div>
+<div class="level-3-tower-roof"></div>
+<div class="castle keep-base"></div>
+<div class="castle keep-main"></div>
+<div class="keep side-tower"></div>
+<div class="keep side-tower roof"></div>
+<div class="castle keep"></div>
+<div class="castle main-tower"></div>
+<div class="main-tower-roof"></div>
+<div class="main-side-roof"></div>
+<div class="keep tower-roof"></div>
+</div>
+</div> -->
+
+<!-- end -->
+
+<div id="loverlay" style="text-align: center;">
+  <div class="loader">
+    <div class="cssload-loader">ABCD</div>
+    <br>
+    <p style="color: white;">Loading...</p>
+  </div>
+</div>
+
+<div class="container">
+  <br><br>
+  <h1 class="h1Class"> Disney Games </h1>
+    <div class="section" id="carousel">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mr-auto ml-auto">
+                <!-- Carousel Card -->
+                <div class="card card-raised card-carousel">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3" class=""></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <a href="http://games.disney.id/olaf" target="_blank">  <img class="d-block w-100" src="Olafs-Frozen-Adventure.jpg"
+                          alt="First slide" style=" border-radius: 6px;"></a>
+                          <div class="carousel-caption d-none d-md-block">
+                           
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                      <a href="https://princess.disney.com/dress-up?group=cinderella" target="_blank">   <img class="d-block w-100" src="cin1.webp"  style=" border-radius: 6px; height: 400px;" alt="Second slide"></a>
+                          <div class="carousel-caption d-none d-md-block">
+                            
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                        <a href="https://lol.disney.com/games/the-mermaid-princess" target="_blank">  <img class="d-block w-100" src="sophia.jpeg" style=" border-radius: 6px;" alt="Second slide"></a>
+                          <div class="carousel-caption d-none d-md-block">
+                           
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                       <a href="https://lol.disney.com/games/disney-fairies-pixie-party-couture" target="_blank">   <img class="d-block w-100" src="pixie.webp"  alt="Third slide" height="400px;"></a>
+                          <div class="carousel-caption d-none d-md-block">
+                          
+                          </div>
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <i class="material-icons">keyboard_arrow_left</i>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <i class="material-icons">keyboard_arrow_right</i>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                </div>
+                <!-- End Carousel Card -->
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<hr style="color: chartreuse;">
+<!-- end slider -->
+
+
+<div class="fashion">
+    <div class="wrapper">
+
+        <h2 style="color: beige;"><strong>All Games<span>( 5 )</span></strong></h2>
+    
+        <div class="cards">
+    
+            <figure class="card">
+                <img src="elsa.jpg" />
+                
+                <figcaption>Elsa Nail Style<a href="https://freegamescasual.com/Free-Online-Games/NailDesign/Elsa-Nail-Style.html" target="_blank"><button class="play">Play Me!!</button></a>  </figcaption>
+    
+            </figure>
+  
+    
+  
+            <figure class="card">
+    
+                <img src="mer1.webp" />
+    
+                <figcaption>Ariel's Symphony<a href="https://lol.disney.com/games/the-little-mermaid-ariels-symphony" target="_blank"><button class="play">Play Me!!</button></a></figcaption>
+    
+            </figure>
+    
+            <figure class="card">
+    
+                <img src="skincare.jpg" />
+    
+                <figcaption>Princess Daily Skincare Routine<a href="https://freegamescasual.com/Free-Online-Games/Makeover/Princess-Daily-Skincare-Routine-play.html" target="_blank"><button class="play">Play Me!!</button></a></figcaption>
+    
+            </figure>
+    
+            <figure class="card">
+    
+                <img src="fash2.jpg" />
+    
+                <figcaption> Princesses Fashion Brands Favorite <a href="https://www.girlsgogames.com/games/nail_studio_games" target="_blank"><button class="play">Play Me!</button></a>
+                 </figcaption>
+    
+            </figure>
+            <figure class="card">
+    
+         <img src="fash.png" /> 
+         
+              <figcaption>Fashionistas: Trendy Vibes game<a href="https://freegamescasual.com/Free-Online-Games/Fashion/Fashionistas-Trendy-Vibes.html" target="_blank"><button class="play">Play Me!!</button></a>    </figcaption>
+  
+          </figure>
+    
+        </div>
+    
+        <h2 style="color: beige;"><strong>What's new?</strong></h2>
+    
+        <div class="news">
+    
+            <figure class="article">
+    
+                <img src="pixie.webp" >
+               
+                <figcaption>
+     <a href="https://lol.disney.com/games/disney-fairies-pixie-party-couture" target="_blank"><button class="play">Play Me!</button></a>
+    
+                    <h3>Fashion</h3>
+    
+                    <p>
+    
+                      In these fashionable games you can dress up, make outfits, walk the catwalk, and more! It's time to play and get fabulous.
+    
+                    </p>
+    
+                </figcaption>
+    
+            </figure>
+    
+            <figure class="article">
+    
+              <img src="olaf.jpeg" />
+    
+                <figcaption>
+    <a href="https://lol.disney.com/games/sticker-books/olafs-summer-sticker-spree" target="_blank"><button class="play">Play Me!</button></a>
+                    <h3>Olaf's Summer Sticker Spree
+                    </h3>
+    
+                    <p>
+    
+                      Join Olaf on a fun-in-the-sun adventure, and build your own perfect Summer day!
+    
+                    </p>
+    
+                </figcaption>
+    
+            </figure>
+    
+            <figure class="article">
+    
+               <a href="https://lol.disney.com/games/sticker-books/olafs-summer-sticker-spree"> <img src="map.webp" /></a>
+    
+                <figcaption>
+    <a href="https://lol.disney.com/games/disneychannel-auradon-hidden-mystery-map" target="_blank"><button class="play">Play Me!</button></a>
+                    <h3> Auradon Hidden Mystery Map
+                    </h3>
+    
+                    <p>
+    
+                     
+                      Visit Descendants
+                      Can you help find all the hidden objects in Auradon? Complete every location and collect stamps for your passport in the Auradon Travel Guide.
+    
+                    </p>
+    
+                </figcaption>
+    
+            </figure>
+    
+            
+            <figure class="article">
+    
+               <img src="carg.webp" />
+    
+                <figcaption>
+    <a href="https://lol.disney.com/games/guido-signtastico"><button class="play">Play Me!</button></a>
+                    <h3>Cars - Guido Signtastico
+                    </h3>
+    
+                    <p>
+    
+                      Help Guido perform awesome sign spinning moves to get customers into the tire shop!
+    
+                    </p>
+    
+                </figcaption>
+    
+            </figure>
+            <figure class="article">
+    
+              <img src="mermaid.jpg" />
+    
+                <figcaption>
+                  <a href="https://lol.disney.com/games/the-mermaid-princess"><button class="play">Play Me!</button></a>
+                    <h3>The Little Mermaid - Ariel's Hidden Treasures
+                    </h3>
+    
+                    <p>
+    
+                      Play as Ariel and venture under the sea to collect shells which can be traded for treasures untold.
+    
+                    </p>
+    
+                </figcaption>
+    
+            </figure>
+        </div>
+    </div>
+    </div>
+    </div>
+<!-- upcoming games start -->
+<h2 style="color: beige;"><strong>Upcoming Games</strong></h2>
+<div class="wrapper1">
+<div class="card1"><img src="upcom4.jpeg"/>
+<div class="info">
+<h1>Disney Fairies - Pirate Fairy Code</h1>
+<p>Put your wit to the test, workout your memory, and make your brain brawny with these brain games that are sure to excercise your noggin skills on the daily.
+</p>
+<div class="releasing-date" style="color: brown;"><b>OCT 14,2021</b> </div>
+</div>
+</div>
+<div class="card1"><img src="upcom2.webp"/>
+<div class="info">
+<h1>Disney Princess: Which Disney Princess Are You?</h1>
+<p>You're kind, generous, and a great friend -- take this quiz to see which princess is most like you</p>
+<div class="releasing-date" style="color: brown;"><b>MAY 30,2021</b> </div>
+</div>
+</div>
+<div class="card1"><img src="upcom3.webp"/>
+<div class="info">
+<h1>Fearless Flyers</h1>
+<p>Start Your Mission Now,Let's Be Adventurous!!</p>
+<div class="releasing-date" style="color: brown;"><b> DEC 25,2021</b></div>
+</div>
+</div>
+</div>
+<br>
+<!-- disney bio -->
+<div class="disney_bio">
+  <section class="section1">
+    <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700.00001 294.42258">
+    <path d="M602.2 128.6c-11.7 2.7-42.6 4.2-42.6 4.2l-3.8 12.2s15.3-1.3 26.5-.2c0 0 3.6-.3 4 4 .2 4.4-.3 9-.3 9s-.3 2.7-4 3.4c-4.3.7-33.3 2-33.3 2L544 179s-1.7 3.6 2.2 2.6c3.6-1 34-6.8 38-6 4.2 1 9 6.8 7.6 12-1.6 6.3-32 25.7-50.4 24.4 0 0-9.7.6-17.8-12.5-7.8-12.5 2.7-36 2.7-36s-4.7-11-1.2-15c0 0 2-1.7 8-2.2l7.5-15.4s-8.5.5-13.5-5.7c-4.6-6-5-8.6-1.4-10.2 3.8-2 39-8.3 63.2-7.5 0 0 8.5-1 16 13.7 0 0 3.4 6-2.6 7.4M511 187.8c-3 7.3-11.3 15-21.3 10.3-10.2-4.8-26.3-37.6-26.3-37.6s-6-12.2-7.2-11.8c0 0-1.3-2.4-2 11-1 13.3.2 39.2-5.3 43.3-5 4-11 2.3-14.4-2.4-2.8-4.7-4-16-2.4-35.7 1.8-19.7 6.3-40.7 12-47.2 6-6.6 10.8-1.8 12.6 0 0 0 7.7 7 20.7 27.7l2.2 3.8s11.8 19.7 13 19.6c0 0 1 1 1.8.2 1.2-.3.8-6.7.8-6.7S493 141 482 105c0 0-1.6-4.6-.5-9 1-4 5.3-2 5.3-2s16.6 8 24.7 35c8 27 2.6 51.5-.4 58.8M429.6 118.5c-1.6 2.8-2.3 6.7-9.2 7.8 0 0-67 4.7-70.3 9.4 0 0-2.2 2.8 1.4 3.5 3.8.8 19 2.8 26.2 3.2 7.8 0 34 .2 43.6 12 0 0 5.5 5.6 5.3 18.3-.2 13-2.5 17.6-7.6 22.3-5.3 4.4-50.7 24.8-80-6.4 0 0-13.4-15 4.7-26.4 0 0 13-8 46.3 1.3 0 0 10 3.6 9.6 7.3-.6 4-8.3 8-19.5 7.8-10.8-.3-18.8-5.5-17.2-4.6 1.5.5-11.7-6.4-15.8-1.7-4 4.4-3 7 1 9.7 10 5.8 49.3 3.7 61-9.4 0 0 4.7-5.3-2.4-9.6-7-4-27.4-6.5-35.3-6.8-7.5-.4-35.6 0-39.8-7.3 0 0-4-5.2.4-19.4 4.6-15 37.3-20.8 51.5-22 0 0 39-1.6 46.3 6.4 0 0 1 1.8-.2 4.5M319 206.4c-4.7 3.5-14.7 2-17.6-2-2.8-3.5-3.8-17.3-3.3-39 .7-22.2 1-49.4 6-53.8 5-4.3 8-.5 10 2.4 2 3 4.6 6.3 5 13.2.6 7 2.3 43 2.3 43s2.2 32.8-2.3 36.2M329 89.4c-13.8 4.7-23.2 3.2-31.2-.3-3.5 6.3-5.6 8.2-8.2 8.6-4 .4-7.5-6-8-8-.8-1.5-2.7-4.2-.4-10.3-7.8-7-8.4-16.4-7-22.7 1.8-7.4 15-35.2 55-38.5 0 0 19.6-1.4 23 9h.6s19 0 18.6 17c0 17-21 38.2-42.4 45.5m17.8-48.7c-12.6 2-32 18.8-41.3 32.7 14.3 2.6 39.3 1.6 50.5-21 0 0 5.3-14.2-9.2-11.7m-55.3 11c-4 6.5-4.2 10.4-2.3 13 4.7-7 13-18 25.5-26.6-9.6 1-17.7 5-23.2 13.6M632.2 205.7c-9.2 22.6-17 45.5-21.5 79.8 0 0-1 6.7-6.5 4.5-5.5-2-14.5-11-16.5-23.7-2-16.6 5.4-44.6 20.5-76.8-4.4-7-7.5-17.4-5-32 0 0 4-27 31-51.4 0 0 3.2-2.7 5-1.8 2.2 1 1.3 9.6-.5 14-1.6 4.2-13.6 25-13.6 25s-7.5 14.2-5.4 25.3c14.2-21.8 46.5-66 66.5-52 12.7 9 12.7 38 3.2 54.8-7.5 13.3-28.7 40.8-57 34.4m41.6-68c-7.4 8-20.6 23.2-31 43.8 11-1.2 21.7-7.3 25-10.4 5.3-4.7 17.5-17.4 15.6-34.2 0 0-1.2-8.8-9.6.8M226 217.5c-35.4 10.8-68.8 5.8-87 1-.5 7.4-1.3 10.5-2.5 11.7-1.4 1.6-13 8.2-19.4-1.2-2.8-4.5-4.2-12.6-5-20-41-18.6-60-46-60.6-47-1-1-10.3-10.7-1-22.7 8.7-10.8 37.5-21.7 63.3-26 1-22 3.4-39 6.5-46.5 3.7-9 8.4-1 12.6 5 3.4 4.5 5.5 23.8 5.7 39.2 16.8-.8 27 .4 45.7 4 24.6 4.2 41 16.8 39.7 31-1.2 14-14 19.8-19 20.2-5 .4-13-3.3-13-3.3-5.6-2.6-.5-5 6-7.8 7.2-3.5 5.6-7 5.6-7-2.6-8-34.5-13.3-66.2-13.3 0 17.5.7 46.5 1.2 63.4 22.2 4.2 38.8 3.3 38.8 3.3s81-2.3 83.3-54c2.5-51.8-81-101.4-142.5-117C56.8 14.4 22 25.8 19 27.3c-3.3 1.6-.3 2.2-.3 2.2S22 30 28 32c6 2 1.2 5 1.2 5C18.7 40.6 7 38.5 4.7 33.7c-2.3-4.7 1.5-9 6-15.3 4.2-6.5 9-6.3 9-6.3 76-26.5 168.8 21 168.8 21 86.8 43.8 101.6 95.3 100 115.3-1.4 19.7-9 53-62.5 69.2M59 146c-8.6 4-2.6 10.4-2.6 10.4 16.2 17.3 36 28.2 55 35 2.2-30 2-40.7 2-55.8C84 137.6 67 142.4 59 146"/>
+
+  </svg>
+    <blockquote class="text">
+      Somehow I can’t believe that there are any heights that can’t be scaled by a man who knows the secrets of making dreams come true. This special secret, it seems to me, can be summarized in four C s. They are curiosity, confidence, courage, and constancy.
+    </blockquote>
+    <p class="author"><em>Walt Disney</em></p>
+  </section>
+</div>
+<!-- end -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+<!-- disney script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script>
+ const text = document.querySelector(".text");
+text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
+const animation = anime.timeline({
+  targets: ".text span",
+  easing: "easeInOutExpo",
+  loop: true
+});
+
+setTimeout( function(){
+  animation
+  .add({
+    rotate: function () {
+      return anime.random(-360, 360);
+    },
+    translateX: function () {
+      return anime.random(-500, 500);
+    },
+    translateY: function () {
+      return anime.random(-500, 500);
+    },
+    duration: 5000,
+    delay: anime.stagger(20)
+  })
+
+  .add({
+    rotate: 0,
+    translateX: 0,
+    translateY: 0,
+    duration: 5000,
+    delay: anime.stagger(20)
+  });
+}, 5500);
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    (function($){
+        var loverlay = document.getElementById("loverlay");
+        window.addEventListener('load', function(){
+          //loverlay.style.display = 'none';
+          jQuery("#loverlay").slideUp();
+        });
+
+      }(jQuery))
+    </script>
+  
+</body>
+</html>
