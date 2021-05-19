@@ -1,0 +1,409 @@
+
+*{margin:0px;padding:0px}
+.abtUs{width:100%;height:auto;
+    background-color:#94618e;color: white;}
+.top{width:80%;height:500px;margin:20px auto;display: flex;}    
+.t1{width:50%;height:500px;}
+.top-rt{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* min-height: 100vh; */
+	perspective: 580px;
+    transition: all 5s;
+    /* background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%,
+     rgba(0,0,0,1) 15%, rgba(121,9,9,1) 100%); */
+}
+top-rt:hover{
+	perspective: 1500px;
+}
+.rev-wrapper{
+	width: 250px;
+	height: 250px;
+	
+	position: relative;
+	transition: all 5s;
+	transform: rotateZ(0) rotateX(0) rotateY(0);
+	transform-style: preserve-3d;
+	/* perspective: 2000px; */
+	animation: abc 7s ease-in-out;
+	animation-iteration-count: infinite;}
+      
+      @keyframes abc{
+        from{transform: rotateX(0) rotateY(0) rotateZ(0);}
+        to{transform: rotateZ(360deg) rotateX(360deg) rotateY(360deg);}
+      }
+
+
+  .rev-wrapper:hover{
+	transform: rotateZ(0deg) rotateX(90deg) rotateY(310deg);  
+} 
+
+.face{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transition: all 5s;
+	opacity: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 25px;
+}
+.face:nth-child(1){
+    background-image: url('https://cdn1.expertreviews.co.uk/sites/expertreviews/files/2020/04/best_two_player_board_games_lead_image.jpg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat; 
+	transform-origin: center left;
+	transform: rotateY(90deg) translateX(-150px);
+}
+.face:nth-child(2){
+    background-image: url("https://images.freecreatives.com/wp-content/uploads/2015/04/Video-Game-Desktop-Backgrounds-2.jpg");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat; 
+	transform-origin: center right;
+	transform: rotateY(-90deg) translateX(150px);
+}
+.face:nth-child(3){
+    background-image: url("https://image.winudf.com/v2/image/Y29tLnJlYWxzcG9ydHNnYW1lcy50MjAuY3JpY2tldC5nYW1lc19zY3JlZW5fMl8xNTE0NjIwNDcyXzA0Mw/screen-2.jpg?h=800&fakeurl=1&type=.jpg");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat; 
+	transform-origin: center top;
+	transform: rotateX(-90deg) translateY(-150px)
+	
+}
+.face:nth-child(4){
+    background-image: url("https://wallpapershome.com/images/wallpapers/street-fighter-5-3840x2160-best-games-2016-fantasy-pc-ps4-9422.jpg");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat; 
+	transform-origin: center bottom;
+	transform: rotateX(90deg) translateY(150px);
+}
+.face:nth-child(5){
+    background-image: url("https://www.pcgamesn.com/wp-content/uploads/2019/01/best-open-world-games-header-900x506.jpg");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat; 
+	transform-origin: center bottom;
+	transform: translateZ(-101px);
+}
+.face:nth-child(6){
+    background-image: url("https://heavy.com/wp-content/uploads/2018/03/pubg-mobile1.jpg?quality=65&strip=all");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat; 
+	transform-origin: center bottom;
+	transform: translateZ(150px);
+}
+.face{box-shadow: 3px 3px 15px 15px white;}
+.tl{color:white}
+.tl h1{font-size: 3.5rem;margin-top: 80px;margin-left: 10px;}
+.tl p{font-size: 1.5rem;margin-left: 50px;text-align:justify;color: white;}
+
+.glow {
+	font-size:4rem;
+	color: #49274A;
+	text-align: center;
+	animation: glow 1s ease-in-out infinite alternate;}
+.top h1{font-size: 5rem;}
+  
+  .glow {
+	width:100%;
+	overflow:hidden;
+  }
+  .tl p{font-size: 1.7rem;}
+  .new span{font-size: 1.7rem;font-weight: bold;}
+  #i3,#i4{font-weight: bold;}
+  
+  
+@keyframes glow {
+	from {
+		text-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fafdf8, 0 0 0px #f9fdf8, 0 0 5px #fafcf9, 0 0 0px #f3f7f2, 0 0 0px #f8fcf8;
+	}
+	
+	to {
+		text-shadow: 1px 1px 15px rgb(238, 86, 149), 0 0 25px rgb(236, 128, 191), 0 0 5px rgb(250, 98, 225);
+	}
+  }
+  .new{display:flex;font-size: 1.2rem;margin:auto}
+  .sym1,.sym2{display: inline-block;}
+.sym{margin-right: 200px;}
+.cv{color: white;}
+.txt{margin-right: 50px;}
+/* #ko{margin-left:90px;}
+#ko2{margin-right: 70px;margin-left: 10px;float: left;} */
+ #i1,#i2{color: ghostwhite;font-size: 29px;margin-left: 50px;margin-top: 50px;}
+.wr{margin-top: 2px;font-size: 1rem;}
+#i3{color:rgb(236, 222, 96);}
+#i4{color: rgb(199, 247, 128);}
+.cv{font-size:1.5rem}
+.ftr{width:100%;height:750px;color:white;background-color: #49274A;}
+/* .ftr p{font-size: 2rem;} */
+.fp{color:white;text-align: center;font-size: 1.7rem;} 
+.hd-ftr{width:50%;height:200px;margin:auto;margin-top: 100px;}
+.hd-ftr h1{text-align: center;font-size: 3.5rem;color: white;}
+.hd-ftr p{font-size:1.9rem;text-align:center;margin-top:30px;color: white;}
+.card-box{width:90%;height:300px;margin:auto;
+display:flex;flex-direction: row;justify-content: space-around;}
+ .card-rev{width:25%;height:300px;padding-top: 100px;} 
+#icon{color:#49274A;font-size:80px;margin:auto;margin-top: 40px;
+}
+#icon2{color:#49274A;font-size:80px;margin:auto;margin-top:35px;
+}
+#icon3{color:#49274A;font-size:80px;margin:auto;margin-top:35px;
+}
+.icon-hold{width:50%;height:150px;border-radius: 50%;background-color: rgb(246, 229, 248);margin:auto}
+.card-rev h2{text-align: center;margin-top: 30px;color: white;font-size: 1.8rem;}
+.card-rev p{text-align: center;margin-top: 15px;color: white;font-size: 1.3rem;}
+.company-rev{width:100%;height:600px}
+#hl{color:white;font-size: 4rem;text-align: center;padding:50px}
+.containers-rev{width:90%;height:300px;display:flex;justify-content: center;align-items: center;margin: auto;margin-top: 30px;background-color: #94618e;;}
+.box{width:25%;height:300px;border:1px solid black;box-shadow: 2px 10px 12px rgba(253, 251, 251, 0.5);display: flex;flex-direction: column;align-items: center;justify-content: space-between;box-sizing: border-box;margin: 20px 10px;
+	;}
+
+.model{height:350px;max-width: 100%;max-width:100%}
+li{max-width: 100%;max-width:100%}
+ul{list-style: none;}
+li{display: inline-block;}
+.team{width: 100%;height:800px;background-color: #49274A ;}
+.team h1{color:white;font-size: 5rem;text-align: center;padding: 70px;}
+.crds{width:90%;height:400px;display:flex;justify-content: center;align-items: center;margin: auto;margin-top: 30px;}
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+	background-color: transparent;
+	width: 25%;
+	height: 450px;
+	/* border: 1px solid #f1f1f1; */
+	border-radius:50%;
+	perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden; /* Safari */
+	backface-visibility: hidden;
+	border-radius: 50%;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+	background-color: #bbb;
+	color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+	background-color:  #ceb2cb;;
+	color: rgb(104, 40, 141);
+	transform: rotateY(180deg);
+	border-radius: 50%;
+  }
+  .card-img{width:100%;height: 450px;border-radius: 50%;}
+  .flip-card-back h1{color: #49274A;font-size: 2rem;}
+  .flip-card-back p{color: #49274A;font-size: 1.5rem;}
+.scl-icons{width:100%;height:120px;background-color: rgb(179, 138, 218);}
+/* .downsocialicons li:hover {
+    box-shadow: 0px 0px 10px 6px rgba(230, 196, 196, 0.3);
+} */
+
+.downsocialicons li a i:hover {
+     box-shadow: 2px 2px 10px 10px rgba(121, 72, 121, 0.7); 
+ } 
+
+.downsocialicons li a img {
+    width: 1rem;
+    
+}
+#mymaail{font-weight: 900px;}
+.scl-icons{list-style-type: none;}
+.hor-list li{display:inline-block;}
+.hor-list li a{color:#49274A;text-decoration:none;font-size:3rem;padding:25px 30px 0px}
+.downsocialicons{padding-top:30px }
+.mail{padding-left: 420px;}
+
+
+#slider-text{
+	padding-top: 40px;
+	display: block;
+	text-align: center;
+  }
+  #slider-text .col-md-6{
+	overflow: hidden;
+  }
+  
+  #slider-text h2 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 400;
+	font-size: 30px;
+	letter-spacing: 3px;
+	margin: 30px auto;
+	padding-left: 40px;
+  }
+  
+  #myCarousel h4{
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	margin: 10px auto 3px;
+  }
+  .imgset-rev{width:20%;box-shadow:2px 1px 10px 7px purple;margin-top: 50px;height:200px;}
+  #myCarousel h5{
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	margin: 3px auto 2px;
+  }
+  #myCarousel h6{
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 300;;
+	font-size: 10px;
+	margin: 2px auto 5px;
+  }
+  /* .containers-rev{width:100%;height:300px;display:flex;margin:auto;background-color:
+	 rgb(197, 179, 212);align-content: center;justify-content: space-around;margin-top: 50px;border:1px solid red}
+   */
+  #slider-control img{
+	padding-top: 60%;
+	margin: 0 auto;
+  }
+  @media screen and (max-width: 992px){
+  #slider-control img {
+	padding-top: 70px;
+	margin: 0 auto;
+  }
+  }
+  
+  .multi-item-carousel .carousel-control {
+	width: 4%;
+	background-image: none;
+  }
+  .multi-item-carousel .carousel-control.left {
+	margin-left: 5px;
+  }
+  .multi-item-carousel .carousel-control.right {
+	margin-right: 5px;
+  }
+  .multi-item-carousel .cloneditem-1,
+  .multi-item-carousel .cloneditem-2,
+  .multi-item-carousel .cloneditem-3,
+  .multi-item-carousel .cloneditem-4,
+  .multi-item-carousel .cloneditem-5 {
+	display: none;
+  }
+  @media all and (min-width: 768px) {
+	.multi-item-carousel .carousel-inner > .active.left,
+	.multi-item-carousel .carousel-inner > .prev {
+	  left: -50%;
+	}
+	.multi-item-carousel .carousel-inner > .active.right,
+	.multi-item-carousel .carousel-inner > .next {
+	  left: 50%;
+	}
+	.multi-item-carousel .carousel-inner > .left,
+	.multi-item-carousel .carousel-inner > .prev.right,
+	.multi-item-carousel .carousel-inner > .active {
+	  left: 0;
+	}
+	.multi-item-carousel .carousel-inner .cloneditem-1 {
+	  display: block;
+	}
+  }
+  @media all and (min-width: 768px) and (transform-3d), all and (min-width: 768px) and (-webkit-transform-3d) {
+	.multi-item-carousel .carousel-inner > .item.active.right,
+	.multi-item-carousel .carousel-inner > .item.next {
+	  -webkit-transform: translate3d(50%, 0, 0);
+	  transform: translate3d(50%, 0, 0);
+	  left: 0;
+	}
+	.multi-item-carousel .carousel-inner > .item.active.left,
+	.multi-item-carousel .carousel-inner > .item.prev {
+	  -webkit-transform: translate3d(-50%, 0, 0);
+	  transform: translate3d(-50%, 0, 0);
+	  left: 0;
+	}
+	.multi-item-carousel .carousel-inner > .item.left,
+	.multi-item-carousel .carousel-inner > .item.prev.right,
+	.multi-item-carousel .carousel-inner > .item.active {
+	  -webkit-transform: translate3d(0, 0, 0);
+	  transform: translate3d(0, 0, 0);
+	  left: 0;
+	}
+  }
+  @media all and (min-width: 992px) {
+	.multi-item-carousel .carousel-inner > .active.left,
+	.multi-item-carousel .carousel-inner > .prev {
+	  left: -16.666%;
+	}
+	.multi-item-carousel .carousel-inner > .active.right,
+	.multi-item-carousel .carousel-inner > .next {
+	  left: 16.666%;
+	}
+	.multi-item-carousel .carousel-inner > .left,
+	.multi-item-carousel .carousel-inner > .prev.right,
+	.multi-item-carousel .carousel-inner > .active {
+	  left: 0;
+	}
+	.multi-item-carousel .carousel-inner .cloneditem-2,
+	.multi-item-carousel .carousel-inner .cloneditem-3,
+	.multi-item-carousel .carousel-inner .cloneditem-4,
+	.multi-item-carousel .carousel-inner .cloneditem-5,
+	.multi-item-carousel .carousel-inner .cloneditem-6  {
+	  display: block;
+	}
+  }
+  @media all and (min-width: 992px) and (transform-3d), all and (min-width: 992px) and (-webkit-transform-3d) {
+	.multi-item-carousel .carousel-inner > .item.active.right,
+	.multi-item-carousel .carousel-inner > .item.next {
+	  -webkit-transform: translate3d(16.666%, 0, 0);
+	  transform: translate3d(16.666%, 0, 0);
+	  left: 0;
+	}
+	.multi-item-carousel .carousel-inner > .item.active.left,
+	.multi-item-carousel .carousel-inner > .item.prev {
+	  -webkit-transform: translate3d(-16.666%, 0, 0);
+	  transform: translate3d(-16.666%, 0, 0);
+	  left: 0;
+	}
+	.multi-item-carousel .carousel-inner > .item.left,
+	.multi-item-carousel .carousel-inner > .item.prev.right,
+	.multi-item-carousel .carousel-inner > .item.active {
+	  -webkit-transform: translate3d(0, 0, 0);
+	  transform: translate3d(0, 0, 0);
+	  left: 0;
+	}
+  }
+  .pn{font-size:100px;margin-top: 80px;}
+  /* .pnl{float:left}
+  .pnr{float:right} */
+  .hmeet{margin-top:-50px;margin-bottom: 50px;}
+  html{font-size: 15px;}
+  
+body{width:100%}
+
+

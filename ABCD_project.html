@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABCD Games</title>
+    
+    <!-- Bootstrap links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">   
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- External CSS files -->
+    <!-- <link rel="stylesheet" href="ABCD_project.css">    -->
+    <link rel="shortcut icon" href="../favicon.ico"> 
+    <link rel="stylesheet" type="text/css" href="demo.css" />
+		<link rel="stylesheet" type="text/css" href="slicebox.css" />
+		<link rel="stylesheet" type="text/css" href="custom.css" />
+    <script type="text/javascript" src="modernizr.custom.46884.js"></script>
+    <link rel="stylesheet" type="text/css" href="news.css" />
+    <link rel="stylesheet" type="text/css" href="articleediting.css" />
+    
+    <link rel="stylesheet" type="text/css" href="project.css" /> 
+    
+    <link rel="stylesheet" type="text/css" href="carousel.css" />
+    <link rel="stylesheet" type="text/css" href="rvw.css" />
+    <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="demo2.css" />
+        <link rel="stylesheet" type="text/css" href="style2.css" />
+        <link rel="stylesheet" href="ABCD_project.css">   
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="animate.min.css">
+    <!-- Javascript files -->
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
+   
+    
+      
+</head>
+<body>
+  <div id="loverlay" style="text-align: center;">
+    <div class="loader">
+      <div class="cssload-loader">ABCD</div>
+      <br>
+      <p>Loading...</p>
+    </div>
+  </div>
+  <div id="particles-js"></div>
+    <!-- <div class="topnav" id="myTopnav">
+        <a href="#home" class="active2" id="hm">Home</a>
+        <a href="#trend">Trending</a>
+        <a href="#news">News</a>
+        <div class="dropdown22">
+          <button class="dropbtn">Categories
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Category 1</a>
+            <a href="#">Category 2</a>
+            <a href="#">Category 3</a>
+            <a href="#">Category 4</a>
+            
+          </div>
+        </div>
+        <a href="#rev">Reviews</a>
+        <a href="#about">About</a>
+        <button class="b1"><i class="fas fa-search"></i></button>
+        <input type="text" placeholder="Search.. "> -->
+        <div class="container yellow">
+          <!-- <div class="abcdlogo"></div> -->
+          <!-- <img src="abcdlogo.jpeg"  class="abcdlogo"/> -->
+          <!-- <div class="abcdlogo">ABCD</div> -->
+          <!-- <a>HOME</a> -->
+          <a class="alogo animated bounceInDown" href="#"><img src="images/abcd.png" width="100px" height="60px" style="position: absolute; display: inline; float: left; margin-left: -200px; margin-top: -20px; " /></a>
+          
+          <a class="pull" href="#trendingGames">TRENDING</a>
+          <a class="pullRight" href="#newsFeed">NEWS & ARTICLES</a>
+          <a class="dropdown22 pullRight" onclick="openCat()">
+           <span class="dropbtn" id="ctgry" >CATEGORIES
+              <i class="fa fa-caret-down"></i></span></a>
+           
+          <div class="dropdown-content22" id="catblock">
+            <div class="pullDrp"><a  href="quickplay.html" class="lk">Quick Play</a></div>
+              <div class="pullDrp"><a  href="StrategyGames/StrategyGames.html" class="lk">Strategy Games</a></div>
+                <div class="pullDrp"><a href="games1/disney.html" class="lk">Disney Games</a></div>
+            
+          </div> 
+          <a class="pullRight" href="Review_final/userrvw.html">REVIEWS</a>
+          <a class="pullRight" href="#aboutUs">ABOUT US</a>
+          <a class="pullRight" href="login.html">LOGIN</a>
+        </div>
+        
+
+       
+    </div>
+    <!-- <div id="particles-js"></div> -->
+    <!-- <div class="wrapper" id="slbox"> -->
+
+      <ul id="sb-slider" class="sb-slider">
+        <li>
+          <a href="login.html" onclick="myFunction()"><img src="images/valo.gif" alt="image1"/></a>
+          
+        </li>
+        <li>
+          <a href="login.html" onclick="myFunction()"><img src="images/gta2.gif" alt="image2"/></a>
+          
+        </li>
+        <li>
+          <a href="login.html" onclick="myFunction()"><img src="images/bgmi.gif" alt="image3"/></a>
+          
+        </li>
+        <li>
+          <a href="login.html" onclick="myFunction()"><img src="images/freefire.gif" alt="image4"/></a>
+          
+        </li>
+        <li>
+          <a href="login.html" onclick="myFunction()"><img src="images/pubg12.gif" alt="image5"/></a>
+          
+        </li>
+      </ul>
+    
+
+      <div id="shadow" class="shadow"></div>
+
+      <div id="nav-arrows" class="nav-arrows">
+        <a href="#" id="nxt" onclick="anim()">Next</a>
+        <a href="#">Previous</a>
+      <!-- </div> -->
+
+    </div><!-- /wrapper -->
+
+    <!-- trending section -->
+
+    <div class="container ts" id="trendingGames">
+      <h1 id="tg"  >TRENDING GAMES</h1>
+      <!-- Full-width images with number text -->
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+          <img src="https://static.techspot.com/articles-info/1746/images/2018-11-11-image-2.jpg" class="imgset" >
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+          <img src="https://assets.vg247.com/current/2014/11/gta_5_ps4_xo-28.jpg" class="imgset">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+          <img src="https://i.ytimg.com/vi/D9x0y6Jog48/maxresdefault.jpg" class="imgset" >
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+          <img src="https://i.gadgets360cdn.com/large/pubg-ps4_1541482351295.jpg" class="imgset">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+          <img src="https://1.bp.blogspot.com/-F_7-6B-F5Vw/XX3COEeTPoI/AAAAAAAAB34/vk9wcAPllMwKbDtMhb_zEFwAnBdFQBpKACLcBGAsYHQ/s1600/unnamed.jpg" class="imgset" >
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+          <img src="https://cdn.shopify.com/s/files/1/0985/6720/products/20190802_093102_1024x1024.jpg?v=1564902501" class="imgset">
+      </div>
+    
+      <!-- Next and previous buttons -->
+      <a class="prevt" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="nextt" onclick="plusSlides(1)">&#10095;</a>
+    
+      <!-- Image text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    
+      <!-- Thumbnail images -->
+      <div class="rowt">
+        <div class="columnt">
+          <img class="demo cursor" src="https://static.techspot.com/articles-info/1746/images/2018-11-11-image-2.jpg" style="width:100%" onclick="currentSlide(1)" alt="SHOOTING SERIES">
+        </div>
+        <div class="columnt">
+          <img class="demo cursor" src="https://assets.vg247.com/current/2014/11/gta_5_ps4_xo-28.jpg" style="width:100%" onclick="currentSlide(2)" alt="GTA">
+        </div>
+        <div class="columnt">
+          <img class="demo cursor" src="https://i.ytimg.com/vi/D9x0y6Jog48/maxresdefault.jpg" style="width:100%" onclick="currentSlide(3)" alt="FREE FIRE">
+        </div>
+        <div class="columnt">
+          <img class="demo cursor" src="https://i.gadgets360cdn.com/large/pubg-ps4_1541482351295.jpg" style="width:100%" onclick="currentSlide(4)" alt="PUBG">
+        </div>
+        <div class="columnt">
+          <img class="demo cursor" src="https://1.bp.blogspot.com/-F_7-6B-F5Vw/XX3COEeTPoI/AAAAAAAAB34/vk9wcAPllMwKbDtMhb_zEFwAnBdFQBpKACLcBGAsYHQ/s1600/unnamed.jpg" style="width:100%" onclick="currentSlide(5)" alt="CRICKET">
+        </div>
+        <div class="columnt">
+          <img class="demo cursor" src="https://scx2.b-cdn.net/gfx/news/hires/2017/chess.jpg" style="width:100%" onclick="currentSlide(6)" alt="CHESS MASTERS" >
+        </div>
+      </div>
+    </div> 
+    <!-- trending section end -->
+
+    <!-- News section -->
+    <div class="news" id="newsFeed">
+      <h1 id="nz">NEWS FEED</h1>
+     
+      <div class="main">
+         
+          <div class="view view-seventh">
+              <img class="newsImg" src="newsImages/news1.jpg" />
+              <div class="mask">
+                  <h2>Epic's next free game</h2>
+                  <p>One year ago, Epic teased a mystery giveaway that turned out to be Grand Theft Auto 5. What will this one be?</p>
+                  <a href="https://www.pcgamer.com/news/" class="info">Read More</a>
+              </div>
+          </div>
+          <div class="view view-seventh">
+              <img class="newsImg" src="newsImages/news4.jpg" />
+              <div class="mask">
+                  <h2>call of duty</h2>
+                  <p>Activision confirms Rambo and Die Hard are coming to Call of Duty: Warzone next week.</p>
+                  <a href="https://www.pcgamer.com/news/" class="info">Read More</a>
+              </div>
+          </div>
+          <div class="view view-seventh">
+            <img  class="newsImg" src="newsImages/news5.jpg" />
+            <div class="mask">
+                <h2>destiny 2</h2>
+                <p>Players do the math on Destiny 2's new transmog system and the grind is even worse than expected.</p>
+                <a href="https://www.pcgamer.com/news/" class="info">Read More</a>
+            </div>
+        </div>
+        <div class="view view-seventh">
+          <img  class="newsImg" src="newsImages/news2.jpg" />
+          <div class="mask">
+              <h2>MAss EFFECT</h2>
+              <p>Mass Effect: Legendary Edition project director says multiplayer could make a comeback.</p>
+              <a href="https://www.pcgamer.com/news/" class="info">Read More</a>
+          </div>
+      </div>
+          <div class="view view-seventh">
+              <img src="newsImages/news3.jpg"  class="newsImg"/>
+              <div class="mask">
+                  <h2>total war</h2>
+                  <p>Total War: Warhammer 3 finally pits a polar bear against the god of skulls.</p>
+                  <a href="https://www.pcgamer.com/news/" class="info">Read More</a>
+              </div>
+          </div>
+          <div class="view view-seventh">
+              <img src="newsImages/news6.jpg"  class="newsImg"/>
+              <div class="mask">
+                  <h2>mario kart</h2>
+                  <p>A modder has turned Serious Sam 4 into Mario Kart.This is the the best thing trending into gaming world.</p>
+                  <a href="https://www.pcgamer.com/news/" class="info">Read More</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+    <!-- News section end -->
+
+
+
+    <!-- Article Section -->
+    
+    <div class="article">
+      <h1 id="art">AMAZING ARTICLES</h1>
+  <div class="lessons">
+    <div class="lesson">
+      <div class="lesson-icon">
+        <img src="https://prog-8.com/images/html/advanced/html.png">
+        <p class="nma">FORTNITE - 6</p>
+      </div>
+      <p class="text-contents">
+        Several of this week's challenges revolve around the Storm, but none are so tough. Because the Storm is quicker to form .</p>
+        <br>
+        <a href="https://www.gamespot.com/articles/fortnite-season-6-week-9-challenges/1100-6491138/" target="_blank"><button class="rm">Read More</button></a>
+    </div>
+    
+    <div class="lesson">
+      <div class="lesson-icon">
+        <img src="https://prog-8.com/images/html/advanced/jQuery.png">
+        <p class="nma">World Warship</p>
+      </div>
+      <p class="text-contents">World Of Warships Celebrates Naval Museums With 17-Hour Livestream.You can virtually visit 15 museums.</p>
+        <br>
+        <a href="https://www.gamespot.com/articles/world-of-warships-celebrates-naval-museums-with-17-hour-livestream/1100-6491509/" target="_blank"><button class="rm">Read More</button></a>
+     
+    </div>
+    <div class="lesson">
+      <div class="lesson-icon">
+        <img src="https://prog-8.com/images/html/advanced/ruby.png">
+        <p class="nma">Call Of Duty</p>
+      </div>
+      <p class="text-contents">Treyarch outlines what's coming to Zombies as part of the mid-season update beginning May 20</p>
+      <br>
+        <a href="https://www.gamespot.com/articles/call-of-duty-black-ops-cold-war-zombies-outbreak-adding-first-main-quest/1100-6491512/" target="_blank"><button class="rm">Read More</button></a>
+     
+    </div>
+    <div class="lesson">
+      <div class="lesson-icon">
+        <img src="https://prog-8.com/images/html/advanced/php.png">
+        <p class="nma">Nickelodean</p>
+      </div>
+      <p class="text-contents">Nickelodeon has announced to create two podcasts based on, SpongeBob and Avatar: The Last Airbender.</p>
+      <br>
+        <a href="https://www.gamespot.com/articles/nickelodeon-is-launching-spongebob-and-avatar-podcasts-beginning-in-june/1100-6491508/" target="_blank"><button class="rm">Read More</button></a>
+    </div>
+    <div class="clear"></div>
+  </div>
+  </div>
+  </div>
+    <!-- Article Section end-->
+
+    <!-- Tournament Section -->
+    
+    <section class="main trnmt" id="tournaments">
+			<h1 id="tt">TOP TOURNAMENTS</h1>
+      <div id="sb-container" class="sb-container">
+      
+        <div>
+          <span class="sb-icon icon-cog"></span>
+          <a href="https://espl.gg/" target="_blank" >
+          <h4><span>Dota 2</span></h4>
+          </a>
+        </div>
+        <div>
+          <span class="sb-icon icon-flight"></span>
+          <a href="https://espl.gg/" target="_blank" >
+          <h4><span>Rocket League</span></h4>
+          </a>
+        </div>	
+        <div>
+          <span class="sb-icon icon-eye"></span>
+          <a href="https://espl.gg/" target="_blank" >
+          <h4><span>LOL</span></h4>
+          </a>
+        </div>	
+        <div>
+          <span class="sb-icon icon-install"></span>
+          <a href="https://espl.gg/" target="_blank" >
+          <h4><span>MLBB</span></h4>
+          </a>
+        </div>	
+        <div>
+          <span class="sb-icon icon-bag"></span>
+          <a href="https://espl.gg/" target="_blank" >
+          <h4><span>LOKAPALA</span></h4>
+          </a>
+        </div>	
+        <div>
+          <span class="sb-icon icon-globe"></span>
+          <a href="https://espl.gg/" target="_blank" >
+          <h4><span>Brawl Stars</span></h4>
+          </a>
+        </div>	
+        <div>
+          <span class="sb-icon icon-picture"></span>
+          <a href="https://espl.gg/" target="_blank" >
+          <h4><span>FREEFIRE</span></h4>					
+          </a>						
+        </div>	
+        <div>
+          <span class="sb-icon icon-video"></span>
+          <a href="https://espl.gg/" target="_blank" >
+          <h4><span>CS:GO</span></h4>			
+        </a>								
+        </div>	
+        <div>
+          <span class="sb-icon icon-download"></span>
+          <a href="https://espl.gg/" target="_blank" >
+           <h4><span>Call of Duty</span></h4>	
+           </a>										
+        </div>	
+        <div>
+          <span class="sb-icon icon-mobile"></span>
+          <a href="https://espl.gg/" target="_blank" >
+            <h4><span>PUBG MOBILE</span></h4>		
+          </a>									
+        </div>
+        <div>
+          <span class="sb-icon icon-camera"></span>
+          <a href="https://espl.gg/" target="_blank" >
+            <h4><span>VALORANT</span></h4>			
+          </a>								
+        </div>
+        <div>
+          <h4><span>Games</span></h4>
+          <span class="sb-toggle">Click to open/close</span>
+          <h5><span>Register</span></h5>											
+        </div>
+        
+       
+        
+      </div><!-- sb-container -->
+      </section>
+      
+     <!-- Tournament Section end -->
+
+
+    
+
+
+
+    <!-- About Us Section -->
+
+    <div class="abtUs" id="aboutUs">
+      <h1 id="tg">ABOUT US</h1>
+      <div class="top">
+          <div class="top-left t1">
+              <div class="tl">
+                  <h1 class="glow">ABCD Games</h1>
+                  <br>
+                  <br>
+                  <p>ABCD Games is a perfect destination for Game Freaks.
+                      It is made by game enthusiasts,for game enthusiasts and of game enthusiasts!!!
+                  </p>
+
+                   
+                   <div class="new">
+                   <div class="sym1">
+                     <span><i class="fa fa-desktop" id="i1"></i></span>
+                     <span class="wr" id="i3">&ensp;PLAYING NOW &emsp;&emsp;&emsp;</span>
+                     <br><br>
+                     <span id="ko" class="cv">&emsp;&emsp;&emsp;3,25,710 &emsp;&emsp;&emsp;</span>
+                    
+                    
+                 </div>
+                 <br>
+                 
+                 <div class="sym2">
+                  <span><i class="fa fa-power-off" id="i2"></i></span>
+                  <span class="wr" id="i4">&ensp;ONLINE</span>
+                  <br><br>
+                  <span id="ko2" class="cv">&emsp;&emsp;&emsp;&emsp;11,51,953</span>
+                 </div>
+                </div>
+                  
+                   
+              </div>
+          </div>
+          <div class="top-rt t1">
+              <div class="rev-wrapper">
+              <div class="face" ></div>
+              <div class="face" ></div>
+              <div class="face" ></div>
+              <div class="face" ></div>
+              <div class="face" ></div>
+              <div class="face" ></div>
+            </div></div>
+      </div>
+      <div class="ftr">
+          <div class="hd-ftr">
+              <h1 class="fh" id="feature">Features</h1>
+              <p class="fp">Our platform is the best because it is has been designed for the best like you. YUP!! It's you reading this :) </p>
+          </div>
+          <div class="card-box ">
+              <div class="card-rev c1 ">
+                  <div class="icon-hold">
+                      <span><i class="fa fa-desktop" id="icon"></i></span>
+                  </div>
+                  <h2>Early Access to games</h2>
+                  <p>Discover,play and get involved with games as they evolve.Be the first one to see what's coming and be a part of this amazing journey.</p>
+                 
+              </div>
+              
+              <div class="card-rev c2"><div class="icon-hold">
+                  <span><i class="far fa-clock" id="icon2"></i></span>
+              </div>
+              <h2>Available 24 X 7</h2>
+              <p>No matter day or night,we are here to help you play and make you feel most pride.Enjoy your fun ride and feel light.</p></div>
+              <div class="card-rev c3"><div class="icon-hold">
+                  <span><i class="fas fa-users" id="icon3"></i>
+                  </span>
+              </div>
+              <h2>Best for all age groups</h2>
+              <p>Be it a girl or a boy,young or old,We have a platter full of fun and froll for all of you because age is just a number.</p></div>
+          </div>
+      </div>
+      <div class="company-rev">
+          <h1 id="hl">Our Friendly Associates</h1>
+          <div class="containers-rev">
+
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                  <div class="carousel multi-item-carousel slide" id="myCarousel" data-ride="carousel">
+                    <div class="carousel-inner">
+            
+                      <div class="item active">
+                        <div class="col-xs-12 col-sm-6 col-md-2">
+                          <a href="#"><img src="https://i.pinimg.com/736x/2e/85/aa/2e85aa7c7034fd8ec3b344c5a446507d--games-for-free-game-logo.jpg" class="img-responsive center-block imgset-rev"></a>
+                          
+                        </div>
+                      </div>
+            
+                      <div class="item">
+                        <div class="col-xs-12 col-sm-6 col-md-2">
+                          <a href="#"><img src="https://tse1.explicit.bing.net/th?id=OIP.I6A_h_u4trPcuEyxckV1kAHaHa&pid=Api&P=0&w=300&h=300" class="img-responsive center-block imgset-rev"></a>
+                         
+                        </div>
+                      </div>
+            
+                      <div class="item">
+                        <div class="col-xs-12 col-sm-6 col-md-2">
+                          <a href="#"><img src="https://www.digitiser2000.com/uploads/4/0/6/6/40667199/178_orig.jpg" class="img-responsive center-block imgset-rev"></a>
+                         
+                        </div>
+                      </div>
+            
+                      <div class="item">
+                        <div class="col-xs-12 col-sm-6 col-md-2">
+                          <a href="#"><img src="https://d3ui957tjb5bqd.cloudfront.net/images/screenshots/products/0/9/9897/video-game-company-logo-o.jpg?1363054636" class="img-responsive center-block imgset-rev"></a>
+                          
+                        </div>
+                      </div>
+            
+                      <div class="item">
+                        <div class="col-xs-12 col-sm-6 col-md-2">
+                          <a href="#"><img src="https://www.schoolphotoproject.com/_picture-of-logos-brands/game-stop-logo1-l.jpg" class="img-responsive center-block imgset-rev"></a>
+                          
+                        </div>
+                      </div>
+            
+                      <div class="item">
+                        <div class="col-xs-12 col-sm-6 col-md-2">
+                          <a href="#"><img src="https://i.pinimg.com/736x/03/bd/ec/03bdecb312cb1c9b92416540453e640d--guerrilla-symbols.jpg" class="img-responsive center-block imgset-rev"></a>
+                         
+                        </div>
+                      </div>
+            
+                    </div>
+            
+                    <div id="slider-control">
+                    <a class="left carousel-control pn pnl" href="#myCarousel" data-slide="prev">&#139;</a>
+                    <a class="right carousel-control pn pnr" href="#myCarousel" data-slide="next">&#155;</a>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+         
+</div>
+      
+      <div class="team">
+          <h1 class="hmeet">Meet the Heart and Brain of our website</h1>
+          
+          
+          <div class="crds">
+              <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="images/bhavneet.jpeg" alt="Avatar" class="card-img">
+                    </div>
+                    <div class="flip-card-back">
+                      <br>
+                      <br>
+                      <br>
+                      <h1>  BHAVNEET KAUR </h1>
+                      <h2 style="color: #49274A"> Leader and Developer </h2>
+                      <br>
+                      <p> bhavneet1850.be20@chitkara.edu.in </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="images/dhroov.jpg" alt="Avatar" class="card-img">
+                    </div>
+                    <div class="flip-card-back">
+                      <br>
+                      <br>
+                      <br>
+                      <h1>  DHROOV </h1>
+                      <h2 style="color: #49274A"> Co-Developer and Tester </h2>
+                      <br>
+                      <p> dhroov1864.be20@chitkara.edu.in </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="images/akaur2.jpeg" alt="Avatar" class="card-img">
+                    </div>
+                    <div class="flip-card-back">
+                      <br>
+                      <br>
+                      <br>
+                      <h1> AMANPREET KAUR </h1>
+                      <h2 style="color: #49274A"> Co-Developer </h2>
+                      <br>
+                      <p> amanpreet1812.be20@chitkara.edu.in </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="images/chamanjeet.jpeg" alt="Avatar" class="card-img">
+                    </div>
+                    <div class="flip-card-back">
+                        <br>
+                        <br>
+                        <br>
+                      <h1>  CHAMANJEET SINGH  </h1>
+                      <h2 style="color: #49274A"> Content Writer </h2>
+                      <br>
+                      <p> chamanjeet1852.be20@chitkara.edu.in </p>
+                    </div>
+                  </div>
+                </div>
+          </div>
+      </div>
+      <div class="scl-icons">
+          <ul class="footer downsocialicons hor-list">
+              <li class="fb"><a href="https://www.facebook.com/ABCD-GAMES-103140898592339"  target="_blank" ><span><i class="fa fa-facebook-f"></i></span></a></li>
+              <li class="twt"><a href="https://twitter.com/AbcdGames" target="_blank"><span><i class="fa fa-twitter"></i></span></a></li>
+              <li class="ig"><a href="https://www.instagram.com/abcdgames.in/" target="_blank"><span><i class="fa fa-instagram"></i></span></a></li>
+              <li class="ggl"><a href="https://www.google.com/" target="_blank"><span><i class="fa fa-google"></i></span></a></li>
+              <li class="link"><a href="https://twitter.com/AbcdGames" target="_blank"><span><i class="fa fa-linkedin"></i></span></a></li>
+              <li class="mail"><a href = "mailto: abcdgames.in@gmail.com" id="mymail"> &nbsp;&nbsp;&ensp;&ensp;&emsp;&nbsp;@abcdGames.in</a></li>
+          </ul>
+
+      </div>
+      
+  </div>
+
+     <!-- About Us Section end-->
+
+
+    <!-- Javascript files -->
+    <!--
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery.slicebox.js"></script>
+   
+		<script type="text/javascript">
+		$(function() {
+				
+				var Page = (function() {
+
+					var $navArrows = $( '#nav-arrows' ).hide(),
+						$shadow = $( '#shadow' ).hide(),
+						slicebox = $( '#sb-slider' ).slicebox( {
+							onReady : function() {
+
+								$navArrows.show();
+								$shadow.show();
+
+							},
+							orientation : 'r',
+							cuboidsRandom : true,
+							disperseFactor : 30
+						} ),
+						
+						init = function() {
+
+							initEvents();
+							
+						},
+						initEvents = function() {
+
+							// add navigation events
+							$navArrows.children( ':first' ).on( 'click', function() {
+
+								slicebox.next();
+								return false;
+
+							} );
+
+							$navArrows.children( ':last' ).on( 'click', function() {
+								
+								slicebox.previous();
+								return false;
+
+							} );
+
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+			});
+      </script>
+       trending 
+      <script>var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+        -->
+
+        <!-- Aboutus js -->
+        
+<!--           
+        <script type="text/javascript">
+          $(document).ready(function(){
+        
+        $('#myCarousel').carousel({ interval: 3000 });
+        
+        $('.multi-item-carousel .item').each(function(){
+        var itemToClone = $(this);
+        
+        for (var i=1;i<6;i++) {
+        itemToClone = itemToClone.next();
+        
+        if (!itemToClone.length) {
+        itemToClone = $(this).siblings(':first');
+        }
+        
+        itemToClone.children(':first-child').clone()
+        .addClass("cloneditem-"+(i))
+        .appendTo($(this));
+        }
+        });
+        });
+        
+        </script> -->
+        <!-- <script type="text/javascript" src="navbar.js"></script>  -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="carousel.js"></script> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+        <script type="text/javascript" src="jquery.slicebox.js"></script>
+        <script type="text/javascript" src="sl2.js"></script>
+        <script type="text/javascript" src="jquery.swatchbook.js"></script>
+<script type="text/javascript">
+  $(function() {
+  
+    $( '#sb-container' ).swatchbook( {
+      // number of degrees that is between each item
+      angleInc : -20,
+      // amount in degrees for the opened item's next sibling
+      proximity : -45,
+      neighbor : -4,
+      // index of the element that when clicked, triggers the open/close function
+      // by default there is no such element
+      closeIdx : 11
+    } );
+  
+  });
+</script>
+        
+
+
+         <!-- trending  -->
+      <script>var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+
+<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> -->
+<!-- <script type="text/javascript" src="js/jquery.swatchbook.js"></script>
+<script type="text/javascript">
+  $(function() {
+  
+    $( '#sb-container' ).swatchbook( {
+      // number of degrees that is between each item
+      angleInc : -10,
+      // amount in degrees for the opened item's next sibling
+      proximity : -45,
+      neighbor : -4,
+      // index of the element that when clicked, triggers the open/close function
+      // by default there is no such element
+      closeIdx : 11
+    } );
+  
+  });
+</script> -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script type="text/javascript" src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+<script type="text/javascript" src="bg.js"></script>
+<!--  -->
+<script> 
+function openCat(){
+  var v = document.getElementById("catblock");
+  if (v.style.display == "none") {
+    v.style.display = "block";
+  } 
+  else {
+    v.style.display = "none";
+  }
+}
+</script>
+
+<script>
+	function myFunction() {
+    alert("Please Login First!");
+}
+</script>
+
+<script type="text/javascript">
+  (function($){
+      var loverlay = document.getElementById("loverlay");
+      window.addEventListener('load', function(){
+        //loverlay.style.display = 'none';
+        jQuery("#loverlay").slideUp();
+      });
+    }(jQuery))
+  </script>
+	
+</body>
+</html>
