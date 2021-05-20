@@ -20,9 +20,6 @@
   html *{
   -webkit-font-smoothing: antialiased;
 }
-/* body{
-  background-color: rgb(192, 198, 255);
-} */
 body {
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #b4d523 ,#52eeb2);
 	background-size: 3000% 3000%;
@@ -319,8 +316,8 @@ h4{
 }
 
 /* ALll gmes */
-.abs,
-h2:after,
+ .abs,
+ h2:after, 
 .cards .card figcaption,
 .cards .card:after,
 .news .card figcaption,
@@ -335,7 +332,7 @@ h2 strong,
 .news .card,
 .news .article {
   position: relative;
-}
+} 
 .fix {
   position: fixed;
 }
@@ -371,10 +368,10 @@ h2 strong,
 h2 span {
   vertical-align: middle;
 }
-.fashion body {
+/* .fashion body {
   background: #24282f;
   font-family: 'Alegreya Sans';
-}
+} */
 .wrapper {
   padding: 15px;
 }
@@ -394,37 +391,37 @@ h2 span {
   color: #aaa;
   margin-left: 10px;
 }
- h2:after {
+  h2:after {
   content: '';
     z-index: 1;  
-  /*bottom: 50%;
+  bottom: 50%;
   margin-bottom: -2px;
   height: 2px;
   left: 0;
   right: 0;
-  background: #373d47;*/
-} 
-.cards
+  background: #373d47;
+}  
+ .cards
  {
   flex-flow: row wrap;
   display: flex;
   justify-content: space-around;
-}
-/* .news{
+ } 
+.news{
   flex-flow: row wrap;
-} */
+}
 .cards .card,
 .news .card {
-  margin: 20px;
+  /* margin: 20px; new change
   width: 180px;
-  height: 270px;
+  height: 270px;*/
   overflow: hidden;
   box-shadow: 0 5px 10px rgba(0,0,0,0.8);
   transform-origin: center top;
   transform-style: preserve-3d;
   transform: translateZ(0);
-  transition: 0.3s;
-}
+  transition: 0.3s; 
+ } 
 .cards .card img,
 .news .card img {
   width: 100%;
@@ -464,7 +461,7 @@ h2 span {
 .news .card:active {
   box-shadow: 0 8px 16px 3px rgba(0,0,0,0.6);
   transform: translateY(-3px) scale(1.05) rotateX(15deg);
-}
+ } 
 .cards .card:hover figcaption,
 .news .card:hover figcaption,
 .cards .card:focus figcaption,
@@ -532,13 +529,9 @@ h2 span {
    box-sizing: border-box; 
   width: 100%;
    height: 100%; 
-  display: flex;
-  align-items: center;
   justify-content: center;
-  /* background: orange;  */
   display: flex;
-  width: 100%;
-  justify-content: center; }
+  }
 
 .card1 {
   width: 500px;
@@ -552,12 +545,14 @@ h2 span {
   transition: 0.4s ease-out;
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5); }
   .card1:hover {
-    transform: translateY(20px); }
+    transform: translateY(20px);
+     }
     .card1:hover:before {
       opacity: 1; }
     .card1:hover .info {
       opacity: 1;
-      transform: translateY(0px); }
+      transform: translateY(0px);
+       }
   .card1:before {
     content: "";
     position: absolute;
@@ -610,381 +605,28 @@ h2 span {
   text-align:center ;
 }
 
-
-
-/* disney logio
-@keyframes wave {
-  0%, 100% {
-    transform: skew(0);
- }
-  50% {
-    transform: skew(0, 15deg);
- }
-}
-.disney, .disney::before, .disney::after {
-  margin: 0;
-  padding: 0;
-}
-.disney body {
-  display: flex;
-  justify-content: center;
-  background-color: #304ea5;
-}
-.container1 {
-  position: relative;
-  top: -60px;
-  width: 500px;
-  height: 500px;
-}
-.arc {
-  position: absolute;
-  right: -3rem;
-  width: 120%;
-  height: 100%;
-}
-.arc circle {
-  cx: 50%;
-  cy: 100%;
-  r: 53.5%;
-  fill: transparent;
-  stroke-width: 2;
-  stroke: white;
-  transform-origin: 50% 50%;
-  transform-box: fill-box;
-  stroke-dasharray: 1870;
-  stroke-dashoffset: 1870;
-  animation: offset 2.5s ease-out 1s forwards;
-}
-@keyframes offset {
-  to {
-    stroke-dashoffset: 0;
- }
-}
-.castle {
-  background-color: #387fe9;
-}
-.portcullis {
-  position: absolute;
-  left: 41%;
-  bottom: -7%;
-  background-color: #304ea5;
-  border-radius: 50% 50% 0 0 / 50% 50% 0 0;
-  height: 20%;
-  width: 20%;
-  transition: border-radius 0.3s;
-  z-index: 2;
-}
-.portcullis:hover {
-  border-radius: 50%;
-}
-.portcullis:hover::before {
-  background-color: #304ea5;
-  border-radius: 50%;
-  width: 60%;
-  height: 60%;
-}
-.portcullis:hover::after {
-  background-color: #304ea5;
-  border-radius: 50%;
-  width: 60%;
-  height: 60%;
-}
-.portcullis::before {
-  position: absolute;
-  bottom: 67%;
-  right: 65%;
-  content: '';
-  transition: all 0.3s;
-}
-.portcullis::after {
-  position: absolute;
-  bottom: 67%;
-  right: -20%;
-  content: '';
-  transition: all 0.3s;
-}
-.base-1 { 
-  position: absolute;
-  left: 15.5%;
-  bottom: 0;
-  width: 70%;
-  height: 10%;
-} 
-.base-2 {
-  position: absolute;
-  left: 20%;
-  bottom: 9%;
-  width: 65%;
-  height: 7%;
-}
-.base-3 {
-  position: absolute;
-  left: 24%;
-  bottom: 15%;
-  width: 55%;
-  height: 6%;
-}
-.base-4 {
-  position: absolute;
-  left: 24%;
-  bottom: 20%;
-  width: 50%;
-  height: 6%;
-}
-.base-4::after {
-  position: absolute;
-  bottom: 50%;
-  left: 76%;
-  border-top: 0px solid transparent;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-bottom: 60px solid #387fe9;
-  content: '';
-  display: block;
-}
-.base-tower {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-top: 0px solid transparent;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-bottom: 60px solid #387fe9;
-}
-.left {
-  bottom: 9.5%;
-   left: 12.5%; 
-}
-.left::after {
-  position: absolute;
-  bottom: 10%;
-  right: 10%;
-  content: '';
-  display: block;
-  transform-origin: right;
-  animation: 0.3s wave 0.2s infinite;
-  background: #387fe9;
-  -webkit-clip-path: polygon(100% 0, 0 47%, 100% 100%);
-  clip-path: polygon(100% 0, 0 47%, 100% 100%);
-  height: 0.6rem;
-  width: 1.2rem;
-}
-.right {
-  bottom: 9.5%;
-  left: 76.5%;
-}
-.right::after {
-  position: absolute;
-  bottom: 10%;
-  right: 10%;
-  content: '';
-  display: block;
-  transform-origin: right;
-  animation: 0.3s wave 0.4s infinite;
-  background: #387fe9;
-  -webkit-clip-path: polygon(100% 0, 0 47%, 100% 100%);
-  clip-path: polygon(100% 0, 0 47%, 100% 100%);
-  height: 0.6rem;
-  width: 1.2rem;
-}
-.mid-tower-left {
-  position: absolute;
-  left: 24%;
-  bottom: 15%;
-  width: 9%;
-  height: 13%;
-}
-.mid-tower-left::after {
-  position: absolute;
-  top: -20%;
-  left: -13px;
-  border-top: 45px solid #387fe9;
-  border-left: 35px solid transparent;
-  border-right: 35px solid transparent;
-  border-bottom: 0px solid transparent;
-  content: '';
-  display: block;
-}
-.mid-tower-left-roof {
-  position: absolute;
-  left: 22.3%;
-  bottom: 30%;
-  border-top: 0px solid transparent;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-bottom: 60px solid #387fe9;
-}
-.mid-tower-left-roof::after {
-  position: absolute;
-  bottom: 10%;
-  right: 10%;
-  content: '';
-  display: block;
-  transform-origin: right;
-  animation: 0.3s wave 0.6s infinite;
-  background: #387fe9;
-  -webkit-clip-path: polygon(100% 0, 0 47%, 100% 100%);
-  clip-path: polygon(100% 0, 0 47%, 100% 100%);
-  height: 0.6rem;
-  width: 1.2rem;
-}
-.mid-tower-right {
-  position: absolute;
-  left: 71%;
-  bottom: 20.8%;
-  border-top: 0px solid transparent;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-bottom: 70px solid #387fe9;
-}
-.mid-tower-right::after {
-  position: absolute;
-  bottom: 10%;
-  right: 0;
-  content: '';
-  display: block;
-  transform-origin: right;
-  animation: 0.3s wave 0.8s infinite;
-  background: #387fe9;
-  -webkit-clip-path: polygon(100% 0, 0 47%, 100% 100%);
-  clip-path: polygon(100% 0, 0 47%, 100% 100%);
-  height: 0.6rem;
-  width: 1.2rem;
-}
-.level-2-tower-left {
-  position: absolute;
-  left: 34%;
-  bottom: 25%;
-  border-top: 0px solid transparent;
-  border-left: 23px solid transparent;
-  border-right: 23px solid transparent;
-  border-bottom: 70px solid #387fe9;
-}
-.level-3-tower {
-  position: absolute;
-  left: 65%;
-  bottom: 26%;
-  width: 5%;
-  height: 12%;
-}
-.level-3-tower-roof {
-  position: absolute;
-  bottom: 37%;
-  right: 28.5%;
-  border-top: 0px solid transparent;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-bottom: 40px solid #387fe9;
-}
-.keep {
-  position: absolute;
-  left: 42.5%;
-  bottom: 25%;
-  width: 23%;
-  height: 10.5%;
-}
-.side-tower {
-  position: absolute;
-  bottom: 20%;
-  left: 40%;
-  border-top: 40px solid #387fe9;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-bottom: 0px solid transparent;
-  width: 5px;
-}
-.side-tower.roof {
-  position: absolute;
-  bottom: 38%;
-  left: 41%;
-  border-top: 0px solid transparent;
-  border-left: 18px solid transparent;
-  border-right: 18px solid transparent;
-  border-bottom: 45px solid #387fe9;
-  width: 0;
-}
-.side-tower.roof::after {
-  position: absolute;
-  bottom: 1%;
-  right: 10%;
-  content: '';
-  display: block;
-  transform-origin: right;
-  animation: 0.3s wave 0.1s infinite;
-  background: #387fe9;
-  -webkit-clip-path: polygon(100% 0, 0 47%, 100% 100%);
-  clip-path: polygon(100% 0, 0 47%, 100% 100%);
-  height: 0.6rem;
-  width: 1.2rem;
-}
-.keep-main {
-  position: absolute;
-  left: 49.3%;
-  bottom: 35%;
-  width: 14%;
-  height: 16%;
-  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 49%, 50% 49%);
-  clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 49%, 50% 49%);
-}
-.main-side-roof {
-  position: absolute;
-  left: 49.3%;
-  bottom: 43%;
-  border-top: 0px solid transparent;
-  border-left: 18px solid transparent;
-  border-right: 18px solid transparent;
-  border-bottom: 45px solid #387fe9;
-  width: 0;
-}
-.main-tower {
-  position: absolute;
-  left: 54.7%;
-  bottom: 50%;
-  width: 10%;
-  height: 10%;
-  -webkit-clip-path: polygon(16% 0, 85% 0, 85% 38%, 100% 38%, 86% 100%, 15% 100%, 0 37%, 16% 37%);
-  clip-path: polygon(16% 0, 85% 0, 85% 38%, 100% 38%, 86% 100%, 15% 100%, 0 37%, 16% 37%);
-}
-.main-tower-roof {
-  position: absolute;
-  left: 54.7%;
-  bottom: 59%;
-  border-top: 0px solid transparent;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  border-bottom: 45px solid #387fe9;
-  width: 0;
-}
-.main-tower-roof::after {
-  position: absolute;
-  bottom: 10%;
-  right: 10%;
-  content: '';
-  display: block;
-  transform-origin: right;
-  animation: 0.3s wave 0.3s infinite;
-  background: #387fe9;
-  -webkit-clip-path: polygon(100% 0, 0 47%, 100% 100%);
-  clip-path: polygon(100% 0, 0 47%, 100% 100%);
-  height: 0.6rem;
-  width: 1.2rem;
-}*/
 .play{
   color: whitesmoke;
 background-color: #f80965;
 border-radius: 14px;
 }
-/* .main_heading{
-  display: inline-block;
-  font-family: ;
-  font-size: 10rem;
-  color: white;
-  text-align: center;
-  padding-top: 0px;
-  padding-left: 25%;
-  margin: 0px;
-  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,         -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,         0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
-}  */
+
+/* disney character */
+.character{
+  /* background-color:#0B2F3A; */
+  text-align:center;
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  font-family: 'Walter Turncoat', cursive;
+}
+.character h1{
+  color: #8447a0;
+  font-size: 100px;
+}
+.character p{
+  font-size: 35px;
+}
 /* disney bio */
 .disney_bio {
   margin: 0;
@@ -1005,7 +647,6 @@ border-radius: 14px;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-   /* background-color: #130e23;  */
   height: 100vh;
   overflow: hidden;
 }
@@ -1019,60 +660,18 @@ border-radius: 14px;
 }
 .disney_bio .text span{
   position: relative;
-  display: inline-block;
+  display: inline-block; 
 }
 
 .author{
   padding-left: 40%;
   font-size: 22px;
 }
-
-
-
- 
  
 </style>
 
 </head>
 <body>
-
-
-
-  <!-- <h1 class="main_heading">DISNEY GAMES:</h1> -->
-<!-- <div class="disney" style="display: inline-block;">
- Hover over the archway -->
-<!-- <div class="container1"> <svg class="arc">
-    <circle> </circle>
-    
-</svg>
-
-<div class="portcullis"> </div>
-<div class="castle base-1"> </div>
-<div class="castle base-2"> </div>
-<div class="castle base-3"> </div>
-<div class="castle base-4"> </div>
-<div class="base-tower left"></div>
-<div class="base-tower right"></div>
-<div class="castle mid-tower-left"></div>
-<div class="mid-tower-left-roof"></div>
-<div class="mid-tower-right"></div>
-<div class="level-2-tower-left"></div>
-<div class="level-2-tower-right"></div>
-<div class="castle level-3-tower"></div>
-<div class="level-3-tower-roof"></div>
-<div class="castle keep-base"></div>
-<div class="castle keep-main"></div>
-<div class="keep side-tower"></div>
-<div class="keep side-tower roof"></div>
-<div class="castle keep"></div>
-<div class="castle main-tower"></div>
-<div class="main-tower-roof"></div>
-<div class="main-side-roof"></div>
-<div class="keep tower-roof"></div>
-</div>
-</div> -->
-
-<!-- end -->
 
 <div id="loverlay" style="text-align: center;">
   <div class="loader">
@@ -1081,7 +680,7 @@ border-radius: 14px;
     <p style="color: white;">Loading...</p>
   </div>
 </div>
-
+<!-- carousels -->
 <div class="container">
   <br><br>
   <h1 class="h1Class"> Disney Games </h1>
@@ -1102,27 +701,21 @@ border-radius: 14px;
                         <div class="carousel-item active">
                         <a href="http://games.disney.id/olaf" target="_blank">  <img class="d-block w-100" src="Olafs-Frozen-Adventure.jpg"
                           alt="First slide" style=" border-radius: 6px;"></a>
-                          <div class="carousel-caption d-none d-md-block">
-                           
-                          </div>
+                        <div class="carousel-caption">
+                          <h4></h4>
+                        </div>
                         </div>
                         <div class="carousel-item">
                       <a href="https://princess.disney.com/dress-up?group=cinderella" target="_blank">   <img class="d-block w-100" src="cin1.webp"  style=" border-radius: 6px; height: 400px;" alt="Second slide"></a>
-                          <div class="carousel-caption d-none d-md-block">
-                            
-                          </div>
+                         
                         </div>
                         <div class="carousel-item">
                         <a href="https://lol.disney.com/games/the-mermaid-princess" target="_blank">  <img class="d-block w-100" src="sophia.jpeg" style=" border-radius: 6px;" alt="Second slide"></a>
-                          <div class="carousel-caption d-none d-md-block">
-                           
-                          </div>
+                      
                         </div>
                         <div class="carousel-item">
                        <a href="https://lol.disney.com/games/disney-fairies-pixie-party-couture" target="_blank">   <img class="d-block w-100" src="pixie.webp"  alt="Third slide" height="400px;"></a>
-                          <div class="carousel-caption d-none d-md-block">
-                          
-                          </div>
+                        
                         </div>
                       </div>
                       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -1288,7 +881,6 @@ border-radius: 14px;
                     </h3>
     
                     <p>
-    
                       Play as Ariel and venture under the sea to collect shells which can be traded for treasures untold.
     
                     </p>
@@ -1327,6 +919,18 @@ border-radius: 14px;
 </div>
 </div>
 <br>
+<!-- dsiney game -->
+<br>
+<div class="character">
+<h1>The Disney Character Generator:</h1>
+<button onclick="displayRandom()" >Roll for Your Disney Character</button>
+</p>
+<div class="things">
+<p id="name"></p>
+<p id="characteristic"></p>
+<p id="place"></p></div>
+</div>
+<!-- end -->
 <!-- disney bio -->
 <div class="disney_bio">
   <section class="section1">
@@ -1337,7 +941,7 @@ border-radius: 14px;
     <blockquote class="text">
       Somehow I can’t believe that there are any heights that can’t be scaled by a man who knows the secrets of making dreams come true. This special secret, it seems to me, can be summarized in four C s. They are curiosity, confidence, courage, and constancy.
     </blockquote>
-    <p class="author"><em>Walt Disney</em></p>
+    <p class="author"><em>~Walt Disney</em></p>
   </section>
 </div>
 <!-- end -->
@@ -1355,7 +959,6 @@ const animation = anime.timeline({
   easing: "easeInOutExpo",
   loop: true
 });
-
 setTimeout( function(){
   animation
   .add({
@@ -1371,7 +974,6 @@ setTimeout( function(){
     duration: 5000,
     delay: anime.stagger(20)
   })
-
   .add({
     rotate: 0,
     translateX: 0,
@@ -1381,6 +983,41 @@ setTimeout( function(){
   });
 }, 5500);
 </script>
+
+<script>
+// Create a function to serve as the template for the object so I can reuse it for multiple clicks//
+  function Disney(name, characteristic, place) {  
+    this.name = name,
+    this.characteristic = characteristic,
+    this.place = place
+  }
+  // Create the random color and return the value //
+  function randomName() {
+    var name = ["Cinderella", "Pocahontas", "Flynn Rider", "Peter Pan", "Aladdin"];
+    var myName = name[Math.floor(Math.random() * name.length)];
+    return myName;
+  }
+  // Create the random race and return the value //
+  function randomCharacteristic() {
+    var characteristic = ["kind", "gentle", "evil", "sensitive", "Special"];
+    var myCharacteristic = characteristic[Math.floor(Math.random() * characteristic.length)];
+    return myCharacteristic;
+  }
+  // Create the random planet and return the value //
+  function randomPlace() {
+    var place = ["Castle", "Jungle", "Wood", "Wooden House", "Cottage"];
+    var myPlace = place[Math.floor(Math.random() * place.length)];
+    return myPlace;
+  }
+  // now output all of the results as created by the Alien object - called with the functions for the random generation of the values //
+  function displayRandom() {
+  var disney = new Disney(randomName(), randomCharacteristic() , randomPlace());
+  document.getElementById("name").innerHTML = "Your Name is  " + disney.name;
+  document.getElementById("characteristic").innerHTML = "You are " + disney.characteristic;
+  document.getElementById("place").innerHTML = "You live in the " + disney.place;
+  }
+  </script>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript">
