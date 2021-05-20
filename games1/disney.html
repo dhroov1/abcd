@@ -16,660 +16,665 @@
         <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
+
 <style>
   html *{
-  -webkit-font-smoothing: antialiased;
-}
-body {
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #b4d523 ,#52eeb2);
-	background-size: 3000% 3000%;
-	animation: gradient 15s ease infinite;
-}
-
-@font-face {
-  font-family: disneyFont;
-  src: url(Disney.ttf);
-}
-
-.h1Class {
-text-align:center;
-  font-family: disneyFont;
-  text-decoration: underline;
-  animation: glow 1s ease-in-out infinite alternate;
-  font-size: 50px;
-}
-
-
-@keyframes glow {
-	from {
-		text-shadow: 0 0 0px #000, 0 0 0px #000, 0 0 0px #fff, 0 0 0px #fff, 0 0 5px #fff, 0 0 0px #fff, 0 0 0px #fff;
-	}
-	
-	to {
-		text-shadow: 1px 1px 15px rgb(238, 86, 149), 0 0 25px rgb(236, 128, 191), 0 0 5px rgb(250, 98, 225);
-	}
+    -webkit-font-smoothing: antialiased;
   }
-
-  .cssload-loader {
-	width: 450px;
-	height: 150px;
-	line-height: 150px;
-	text-align: center;
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%, -50%);
-		-o-transform: translate(-50%, -50%);
-		-ms-transform: translate(-50%, -50%);
-		-webkit-transform: translate(-50%, -50%);
-		-moz-transform: translate(-50%, -50%);
-	font-family: Comic Sans MS;
-	text-transform: uppercase;
-	font-weight: 900;
-	font-size:54px;
-	color: white;
-	letter-spacing: 0.2em;
-}
-.cssload-loader::before, .cssload-loader::after {
-	content: "";
-	display: block;
-	width: 45px;
-	height: 45px;
-	background: white;
-	position: absolute;
-	animation: cssload-load 0.81s infinite alternate ease-in-out;
-		-o-animation: cssload-load 0.81s infinite alternate ease-in-out;
-		-ms-animation: cssload-load 0.81s infinite alternate ease-in-out;
-		-webkit-animation: cssload-load 0.81s infinite alternate ease-in-out;
-		-moz-animation: cssload-load 0.81s infinite alternate ease-in-out;
-}
-.cssload-loader::before {
-	top: 0;
-}
-.cssload-loader::after {
-	bottom: 0;
-}
-
-
-
-@keyframes cssload-load {
-	0% {
-		left: 0;
-		height: 90px;
-		width: 45px;
-	}
-	50% {
-		height: 24px;
-		width: 120px;
-	}
-	100% {
-		left: 405px;
-		height: 90px;
-		width: 45px;
-	}
-}
-
-@-o-keyframes cssload-load {
-	0% {
-		left: 0;
-		height: 90px;
-		width: 45px;
-	}
-	50% {
-		height: 24px;
-		width: 120px;
-	}
-	100% {
-		left: 405px;
-		height: 90px;
-		width: 45px;
-	}
-}
-
-@-ms-keyframes cssload-load {
-	0% {
-		left: 0;
-		height: 90px;
-		width: 45px;
-	}
-	50% {
-		height: 24px;
-		width: 120px;
-	}
-	100% {
-		left: 405px;
-		height: 90px;
-		width: 45px;
-	}
-}
-
-@-webkit-keyframes cssload-load {
-	0% {
-		left: 0;
-		height: 90px;
-		width: 45px;
-	}
-	50% {
-		height: 24px;
-		width: 120px;
-	}
-	100% {
-		left: 405px;
-		height: 90px;
-		width: 45px;
-	}
-}
-
-@-moz-keyframes cssload-load {
-	0% {
-		left: 0;
-		height: 90px;
-		width: 45px;
-	}
-	50% {
-		height: 24px;
-		width: 120px;
-	}
-	100% {
-		left: 405px;
-		height: 90px;
-		width: 45px;
-	}
-}
-
-#loverlay{
-  height: 100%;
-  width: 100%;
-  background: #49274A;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 9999;
-}
-
-.loader{
-display: inline-block;
-position: relative;
-top: 50%;
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-h3{
-  font-weight: 300!important;
-  font-size: 25px !important;
-}
-
-h4{
-  font-size: 18px !important;
-  font-weight: 300 !important;
-}
-
-.card.card-carousel {
-  border: 0;
-  margin-bottom: 30px;
-  margin-top: 30px;
-  border-radius: 6px ;
-  color: rgba(0,0,0,.87);
-  background: #fff;
-  width: 100%;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
-}
-
-.card.card-carousel img{
-  border-radius: 6px;
-}
-.carousel-indicators {
-  position: absolute;
-  right: 0;
-  bottom: 10px;
-  left: 0;
-  z-index: 15;
-  display: flex;
-  justify-content: center;
-  padding-left: 0;
-  margin-right: 15%;
-  margin-left: 15%;
-  list-style: none;
-}
-.carousel .carousel-indicators {
-  bottom: 5px;
-}
-.carousel .carousel-indicators li {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  text-indent: -999px;
-  cursor: pointer;
-  border: 1px solid #fff;
-  border-radius: 10px;
-  background: #fff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0,.2);
-  border-radius: 2px;
-}
-.carousel .carousel-indicators .active{
-  margin: 11px 10px; 
-} 
-.carousel .carousel-indicators li {
-  margin: 11px 10px;
-}
-.carousel .carousel-indicators .active {
-  margin-top: 10px;
-  transform: scale(1.5);
-  box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
-}
-.carousel-inner {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-.carousel-item {
-  position: relative;
-  display: none;
-  align-items: center;
-  width: 100% !important;
-  transition: transform .6s ease;
-  backface-visibility: hidden;
-  perspective: 1000px;
-}
-.carousel-item.active {
-  display: block;
-}
-.carousel .carousel-caption {
-  padding-bottom: 45px;
-}
-.carousel .carousel-caption .material-icons {
-  position: relative;
-  top: 5px;
-}
-.carousel .carousel-control-next .material-icons{
-  z-index: 5;
-  display: inline-block;
-  font-size: 50px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 50px;
-  margin: auto;
-}
-.carousel .carousel-control-prev .material-icons {
-  z-index: 5;
-  display: inline-block;
-  font-size: 50px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 50px;
-  margin: auto;
-}
-
-/* ALll gmes */
- .abs,
- h2:after, 
-.cards .card figcaption,
-.cards .card:after,
-.news .card figcaption,
-.news .card:after,
-.news .article figcaption {
-  position: absolute;
-}
-.rel,
-h2,
-h2 strong,
-.cards .card,
-.news .card,
-.news .article {
-  position: relative;
-} 
-.fix {
-  position: fixed;
-}
-.dfix {
-  display: inline;
-}
-.dib {
-  display: inline-block;
-}
-.db {
-  display: block;
-}
-.dn {
-  display: none;
-}
-.df,
-.cards,
-.news {
-  display: flex;
-}
-.dif {
-  display: inline-flex;
-}
-.dg {
-  display: grid;
-}
-.dig {
-  display: inline-grid;
-}
-.vm,
-h2,
-h2 strong,
-h2 span {
-  vertical-align: middle;
-}
-/* .fashion body {
-  background: #24282f;
-  font-family: 'Alegreya Sans';
-} */
-.wrapper {
-  padding: 15px;
-}
-h2 {
-  padding: 10px;
-  padding-left: 25px;
-  color: #ccc;
-  margin: 0;
-}
-h2 strong {
-  z-index: 2;
-  background: #24282f;
-  padding: 4px 8px;
-}
-h2 span {
-  font-size: 0.7em;
-  color: #aaa;
-  margin-left: 10px;
-}
-  h2:after {
-  content: '';
-    z-index: 1;  
-  bottom: 50%;
-  margin-bottom: -2px;
-  height: 2px;
-  left: 0;
-  right: 0;
-  background: #373d47;
-}  
- .cards
- {
-  flex-flow: row wrap;
-  display: flex;
-  justify-content: space-around;
- } 
-.news{
-  flex-flow: row wrap;
-}
-.cards .card,
-.news .card {
-  /* margin: 20px; new change
-  width: 180px;
-  height: 270px;*/
-  overflow: hidden;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.8);
-  transform-origin: center top;
-  transform-style: preserve-3d;
-  transform: translateZ(0);
-  transition: 0.3s; 
- } 
-.cards .card img,
-.news .card img {
-  width: 100%;
-  min-height: 100%;
-}
-.cards .card figcaption,
-.news .card figcaption {
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 20px;
-  padding-bottom: 10px;
-  font-size: 20px;
-  background: none;
-  color: rgb(36, 5, 5);
-  transform: translateY(100%);
-  transition: 0.3s;
-}
-.cards .card:after,
-.news .card:after {
-  content: '';
-  z-index: 10;
-  width: 200%;
-  height: 100%;
-  top: -90%;
-  left: -20px;
-  opacity: 0.1;
-  transform: rotate(45deg);
-  background: linear-gradient(to top, transparent, #fff 15%, rgba(255,255,255,0.5));
-  transition: 0.3s;
-}
-.cards .card:hover,
-.news .card:hover,
-.cards .card:focus,
-.news .card:focus,
-.cards .card:active,
-.news .card:active {
-  box-shadow: 0 8px 16px 3px rgba(0,0,0,0.6);
-  transform: translateY(-3px) scale(1.05) rotateX(15deg);
- } 
-.cards .card:hover figcaption,
-.news .card:hover figcaption,
-.cards .card:focus figcaption,
-.news .card:focus figcaption,
-.cards .card:active figcaption,
-.news .card:active figcaption {
-  transform: none;
-}
-.cards .card:hover:after,
-.news .card:hover:after,
-.cards .card:focus:after,
-.news .card:focus:after,
-.cards .card:active:after,
-.news .card:active:after {
-  transform: rotate(25deg);
-  top: -40%;
-  opacity: 0.15;
-}
-.news .article {
-  overflow: hidden;
-  width: 350px;
-  height: 235px;
-  margin: 20px;
-}
-.news .article img {
-  width: 100%;
-  min-height: 100%;
-  transition: 0.2s;
-}
-.news .article figcaption {
-  font-size: 14px;
-  text-shadow: 0 1px 0 rgba(51,51,51,0.3);
-  color: rgb(160, 11, 11);
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  padding: 40px;
-  box-shadow: 0 0 2px rgba(0,0,0,0.2);
-  background: rgba(6,18,53,0.6);
-  opacity: 0;
-  transform: scale(1.15);
-  transition: 0.2s;
-}
-.news .article figcaption h3 {
-  color: #3792e3;
-  font-size: 16px;
-  margin-bottom: 0;
-  font-weight: bold;
-}
-.news .article:hover img,
-.news .article:focus img,
-.news .article:active img {
-  filter: blur(3px);
-  transform: scale(0.97);
-}
-.news .article:hover figcaption,
-.news .article:focus figcaption,
-.news .article:active figcaption {
-  opacity: 1;
-  transform: none;
-}
- /* upcoming games */
-.wrapper1  {
-   box-sizing: border-box; 
-  width: 100%;
-   height: 100%; 
-  justify-content: center;
-  display: flex;
+  body {
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #b4d523 ,#52eeb2);
+      background-size: 3000% 3000%;
+      animation: gradient 15s ease infinite;
   }
-
-.card1 {
-  width: 500px;
-  height: 400px;
-  border-radius: 15px;
-  padding: 20px;
-  background: white;
-  position: relative;
-  display: block;
-  align-items: center;
-  transition: 0.4s ease-out;
-  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5); }
-  .card1:hover {
-    transform: translateY(20px);
-     }
-    .card1:hover:before {
-      opacity: 1; }
-    .card1:hover .info {
-      opacity: 1;
-      transform: translateY(0px);
-       }
-  .card1:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 2;
-    transition: 0.5s;
-    opacity: 0; }
-  .card1 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 15px; }
-  .card1 .info {
-    position: relative;
-    z-index: 3;
-    color: white;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: 0.5s; }
-    .card1 .info h1 {
-      margin: 0px; }
-    .card1 .info p {
-      letter-spacing: 1px;
-      font-size: 15px;
-      margin-top: 8px; }
-    .card1 .info button {
-      padding: 1rem;
-      outline: none;
-      border: none;
-      border-radius: 3px;
-      background: white;
-      color: black;
-      font-weight: bold;
-      cursor: pointer;
-      
-      transition: 0.4s ease; }
-      .card1 .info button:hover {
-        background: dodgerblue;
-        color: white; }
-.heading{
-  text-align:center ;
-}
-
-.play{
-  color: whitesmoke;
-background-color: #f80965;
-border-radius: 14px;
-}
-
-/* disney character */
-.character{
-  /* background-color:#0B2F3A; */
+  
+  @font-face {
+    font-family: disneyFont;
+    src: url(Disney.ttf);
+  }
+  
+  .h1Class {
   text-align:center;
-  margin: 0;
-  padding: 0;
-  box-sizing:border-box;
-  font-family: 'Walter Turncoat', cursive;
-}
-.character h1{
-  color: #8447a0;
-  font-size: 100px;
-}
-.character p{
-  font-size: 35px;
-}
-/* disney bio */
-.disney_bio {
-  margin: 0;
-  padding: 0;
-  box-sizing:border-box;
-  color: #ABEC49;
-  font-family: 'Walter Turncoat', cursive;
-}
-
-.logo{
-  fill: #ABEC18;
-  height:80px;
-}
-.section1 {
+    font-family: disneyFont;
+    text-decoration: underline;
+    animation: glow 1s ease-in-out infinite alternate;
+    font-size: 50px;
+  }
+  
+  
+  @keyframes glow {
+      from {
+          text-shadow: 0 0 0px #000, 0 0 0px #000, 0 0 0px #fff, 0 0 0px #fff, 0 0 5px #fff, 0 0 0px #fff, 0 0 0px #fff;
+      }
+      to {
+          text-shadow: 1px 1px 15px rgb(238, 86, 149), 0 0 25px rgb(236, 128, 191), 0 0 5px rgb(250, 98, 225);
+      }
+    }
+  
+    .cssload-loader {
+      width: 450px;
+      height: 150px;
+      line-height: 150px;
+      text-align: center;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+      font-family: Comic Sans MS;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size:54px;
+      color: white;
+      letter-spacing: 0.2em;
+  }
+  .cssload-loader::before, .cssload-loader::after {
+      content: "";
+      display: block;
+      width: 45px;
+      height: 45px;
+      background: white;
+      position: absolute;
+      animation: cssload-load 0.81s infinite alternate ease-in-out;
+          -o-animation: cssload-load 0.81s infinite alternate ease-in-out;
+          -ms-animation: cssload-load 0.81s infinite alternate ease-in-out;
+          -webkit-animation: cssload-load 0.81s infinite alternate ease-in-out;
+          -moz-animation: cssload-load 0.81s infinite alternate ease-in-out;
+  }
+  .cssload-loader::before {
+      top: 0;
+  }
+  .cssload-loader::after {
+      bottom: 0;
+  }
+  
+  
+  
+  @keyframes cssload-load {
+      0% {
+          left: 0;
+          height: 90px;
+          width: 45px;
+      }
+      50% {
+          height: 24px;
+          width: 120px;
+      }
+      100% {
+          left: 405px;
+          height: 90px;
+          width: 45px;
+      }
+  }
+  
+  @-o-keyframes cssload-load {
+      0% {
+          left: 0;
+          height: 90px;
+          width: 45px;
+      }
+      50% {
+          height: 24px;
+          width: 120px;
+      }
+      100% {
+          left: 405px;
+          height: 90px;
+          width: 45px;
+      }
+  }
+  
+  @-ms-keyframes cssload-load {
+      0% {
+          left: 0;
+          height: 90px;
+          width: 45px;
+      }
+      50% {
+          height: 24px;
+          width: 120px;
+      }
+      100% {
+          left: 405px;
+          height: 90px;
+          width: 45px;
+      }
+  }
+  
+  @-webkit-keyframes cssload-load {
+      0% {
+          left: 0;
+          height: 90px;
+          width: 45px;
+      }
+      50% {
+          height: 24px;
+          width: 120px;
+      }
+      100% {
+          left: 405px;
+          height: 90px;
+          width: 45px;
+      }
+  }
+  
+  @-moz-keyframes cssload-load {
+      0% {
+          left: 0;
+          height: 90px;
+          width: 45px;
+      }
+      50% {
+          height: 24px;
+          width: 120px;
+      }
+      100% {
+          left: 405px;
+          height: 90px;
+          width: 45px;
+      }
+  }
+  
+  #loverlay{
+    height: 100%;
+    width: 100%;
+    background: #49274A;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+  }
+  
+  .loader{
+  display: inline-block;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  height: 100vh;
-  overflow: hidden;
+  top: 50%;
+  }
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+  h3{
+    font-weight: 300!important;
+    font-size: 25px !important;
+  }
+  
+  h4{
+    font-size: 18px !important;
+    font-weight: 300 !important;
+  }
+  
+  .card.card-carousel {
+    border: 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 6px ;
+    color: rgba(0,0,0,.87);
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+  }
+  
+  .card.card-carousel img{
+    border-radius: 6px;
+  }
+  .carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+  }
+  .carousel .carousel-indicators {
+    bottom: 5px;
+  }
+  .carousel .carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    text-indent: -999px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0,.2);
+    border-radius: 2px;
+  }
+  .carousel .carousel-indicators .active{
+    margin: 11px 10px; 
+  } 
+  .carousel .carousel-indicators li {
+    margin: 11px 10px;
+  }
+  .carousel .carousel-indicators .active {
+    margin-top: 10px;
+    transform: scale(1.5);
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+  }
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  .carousel-item {
+    position: relative;
+    display: none;
+    align-items: center;
+    width: 100% !important;
+    transition: transform .6s ease;
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  .carousel-item.active {
+    display: block;
+  }
+  .carousel .carousel-caption {
+    padding-bottom: 45px;
+  }
+  .carousel .carousel-caption .material-icons {
+    position: relative;
+    top: 5px;
+  }
+  .carousel .carousel-control-next .material-icons{
+    z-index: 5;
+    display: inline-block;
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    margin: auto;
+  }
+  .carousel .carousel-control-prev .material-icons {
+    z-index: 5;
+    display: inline-block;
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    margin: auto;
+  }
+  
+  /* ALll gmes */
+   .abs,
+   h2:after, 
+  .cards .card figcaption,
+  .cards .card:after,
+  .news .card figcaption,
+  .news .card:after,
+  .news .article figcaption {
+    position: absolute;
+  }
+  .rel,
+  h2,
+  h2 strong,
+  .cards .card,
+  .news .card,
+  .news .article {
+    position: relative;
+  } 
+  .fix {
+    position: fixed;
+  }
+  .dfix {
+    display: inline;
+  }
+  .dib {
+    display: inline-block;
+  }
+  .db {
+    display: block;
+  }
+  .dn {
+    display: none;
+  }
+/* for horiz pics */
+  .df,
+  .cards,
+  .news {
+    display: flex;
+  }
+  .dif {
+    display: inline-flex;
+  }
+  .dg {
+    display: grid;
+  }
+  .dig {
+    display: inline-grid;
+  }
+  .vm,
+  h2,
+  h2 strong,
+  h2 span {
+    vertical-align: middle;
+  }
+  
+  /* .fashion body {
+    background: #24282f;
+    font-family: 'Alegreya Sans';
+  } */
+  .wrapper {
+    padding: 15px;
+  }
+  h2 {
+    padding: 10px;
+    padding-left: 25px;
+    color: #ccc;
+    margin: 0;
+  }
+  h2 strong {
+    z-index: 2;
+    background: #24282f;
+    padding: 4px 8px;
+  }
+  h2 span {
+    font-size: 0.7em;
+    color: #aaa;
+    margin-left: 10px;
+  }
+    h2:after {
+    content: '';
+      z-index: 1;  
+    bottom: 50%;
+    margin-bottom: -2px;
+    height: 2px;
+    left: 0;
+    right: 0;
+    background: #373d47;
+  }  
+   .cards
+   {
+    flex-flow: row wrap;
+    display: flex;
+    justify-content: space-around;
+   } 
+  .news{
+    flex-flow: row wrap;
+  }
+  .cards .card,
+  .news .card {
+      /* changes */
+    margin: 20px; 
+    width: 200px;
+    height: 230px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.8);
+    transform-origin: center top;
+    transform-style: preserve-3d;
+    transform: translateZ(0);
+    transition: 0.3s; 
+   } 
+  .cards .card img,
+  .news .card img {
+    width: 100%;
+    min-height: 100%;
+  }
+  .cards .card figcaption,
+  .news .card figcaption {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    background: none;
+    color: rgb(36, 5, 5);
+    transform: translateY(100%);
+    transition: 0.3s;
+  }
+  .cards .card:after,
+  .news .card:after {
+    content: '';
+    z-index: 10;
+    width: 200%;
+    height: 100%;
+    top: -90%;
+    left: -20px;
+    opacity: 0.1;
+    transform: rotate(45deg);
+    background: linear-gradient(to top, transparent, #fff 15%, rgba(255,255,255,0.5));
+    transition: 0.3s;
+  }
+  .cards .card:hover,
+  .news .card:hover,
+  .cards .card:focus,
+  .news .card:focus,
+  .cards .card:active,
+  .news .card:active {
+    box-shadow: 0 8px 16px 3px rgba(0,0,0,0.6);
+    transform: translateY(-3px) scale(1.05) rotateX(15deg);
+   } 
+   .cards .card:hover figcaption, 
+  .news .card:hover figcaption,
+  .cards .card:focus figcaption,
+  .news .card:focus figcaption,
+  .cards .card:active figcaption,
+  .news .card:active figcaption {
+    transform: none;
+  } 
+  .cards .card:hover:after,
+  .news .card:hover:after,
+  .cards .card:focus:after,
+  .news .card:focus:after,
+  .cards .card:active:after,
+  .news .card:active:after {
+    transform: rotate(25deg);
+    top: -40%;
+    opacity: 0.15;
+  }
+  .news .article {
+    overflow: hidden;
+    /* new change */
+    width: 250px;
+    height: 235px;
+    margin: 20px;
+  }
+  .news .article img {
+    width: 100%;
+    min-height: 100%;
+    transition: 0.2s;
+  }
+  .news .article figcaption {
+    font-size: 10px;
+    text-shadow: 0 1px 0 rgba(51,51,51,0.3);
+    color: rgb(160, 11, 11);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 40px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.2);
+    background: rgba(6,18,53,0.6);
+    opacity: 0;
+    transform: scale(1.15);
+    transition: 0.2s;
+  }
+  .news .article figcaption h3 {
+    color: #3792e3;
+    font-size: 16px;
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+   .news .article:hover img,
+  .news .article:focus img,
+  .news .article:active img {
+    filter: blur(3px);
+     transform: scale(0.97); 
+  } 
+  .news .article:hover figcaption,
+  .news .article:focus figcaption,
+  .news .article:active figcaption {
+    opacity: 1;
+    transform: none;
+  }
+   /* upcoming games */
+  .wrapper1  {
+     box-sizing: border-box; 
+    width: 100%;
+     height: 100%; 
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    /* justify-content: space-between; */
+    display: flex;
+    }
+  
+  .card1 {
+    width: 500px;
+    height: 400px;
+    border-radius: 15px;
+    padding: 20px;
+    background: white;
+    position: relative;
+    display: block;
+    align-items: center;
+    transition: 0.4s ease-out;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5); 
 }
-.disney_bio .text {
-  position: relative;
-  text-align: center;
- 
-  margin: 10px 40px;
-  max-width: 650px;
-  font-size: 26px;
-}
-.disney_bio .text span{
-  position: relative;
-  display: inline-block; 
-}
-
-.author{
-  padding-left: 40%;
-  font-size: 22px;
-}
- 
+    .card1:hover {
+      transform: translateY(20px);
+       }
+      .card1:hover:before {
+        opacity: 1; }
+      .card1:hover .info {
+        opacity: 1;
+        transform: translateY(0px);
+         }
+    .card1:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 2;
+      transition: 0.5s;
+      opacity: 0; }
+    .card1 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 15px; }
+    .card1 .info {
+      position: relative;
+      z-index: 3;
+      color: white;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: 0.5s; }
+      .card1 .info h1 {
+        margin: 0px; }
+      .card1 .info p {
+        letter-spacing: 1px;
+        font-size: 15px;
+        margin-top: 8px; }
+      .card1 .info button {
+        padding: 1rem;
+        outline: none;
+        border: none;
+        border-radius: 3px;
+        background: white;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.4s ease;
+     }
+        .card1 .info button:hover {
+          background: dodgerblue;
+          color: white; }
+  .heading{
+    text-align:center ;
+  }
+  
+  .play{
+    color: whitesmoke;
+  background-color: #f80965;
+  border-radius: 14px;
+  }
+  
+  /* disney character */
+  .character{
+    /* background-color:#0B2F3A; */
+    text-align:center;
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Walter Turncoat', cursive;
+  }
+  .character h1{
+    color: #8447a0;
+    font-size: 100px;
+  }
+  .character p{
+    font-size: 35px;
+  }
+  /* disney bio */
+  .disney_bio {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    color: #ABEC49;
+    font-family: 'Walter Turncoat', cursive;
+  }
+  
+  .logo{
+    fill: #ABEC18;
+    height:80px;
+  }
+  .section1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .disney_bio .text {
+    position: relative;
+    text-align: center;
+   
+    margin: 10px 40px;
+    max-width: 650px;
+    font-size: 26px;
+  }
+  .disney_bio .text span{
+    position: relative;
+    display: inline-block; 
+  }
+  
+  .author{
+    padding-left: 40%;
+    font-size: 22px;
+  }
 </style>
-
 </head>
 <body>
 
@@ -746,9 +751,8 @@ border-radius: 14px;
     
         <div class="cards">
     
-            <figure class="card">
+            <figure class="card ">
                 <img src="elsa.jpg" />
-                
                 <figcaption>Elsa Nail Style<a href="https://freegamescasual.com/Free-Online-Games/NailDesign/Elsa-Nail-Style.html" target="_blank"><button class="play">Play Me!!</button></a>  </figcaption>
     
             </figure>
@@ -759,7 +763,7 @@ border-radius: 14px;
     
                 <img src="mer1.webp" />
     
-                <figcaption>Ariel's Symphony<a href="https://lol.disney.com/games/the-little-mermaid-ariels-symphony" target="_blank"><button class="play">Play Me!!</button></a></figcaption>
+                <figcaption>Ariel's Symphony <a href="https://lol.disney.com/games/the-little-mermaid-ariels-symphony" target="_blank"><button class="play">Play Me!!</button></a></figcaption>
     
             </figure>
     
@@ -804,8 +808,8 @@ border-radius: 14px;
     
                     <p>
     
-                      In these fashionable games you can dress up, make outfits, walk the catwalk, and more! It's time to play and get fabulous.
-    
+                    <b> In these fashionable games you can dress up, make outfits, walk the catwalk, and more! It's time to play and get fabulous.
+    </b> 
                     </p>
     
                 </figcaption>
@@ -823,7 +827,7 @@ border-radius: 14px;
     
                     <p>
     
-                      Join Olaf on a fun-in-the-sun adventure, and build your own perfect Summer day!
+                    <b>  Join Olaf on a fun-in-the-sun adventure, and build your own perfect Summer day!</b>
     
                     </p>
     
@@ -843,9 +847,9 @@ border-radius: 14px;
                     <p>
     
                      
-                      Visit Descendants
+                     <b>Visit Descendants
                       Can you help find all the hidden objects in Auradon? Complete every location and collect stamps for your passport in the Auradon Travel Guide.
-    
+    </b> 
                     </p>
     
                 </figcaption>
@@ -863,9 +867,9 @@ border-radius: 14px;
                     </h3>
     
                     <p>
-    
+    <b>
                       Help Guido perform awesome sign spinning moves to get customers into the tire shop!
-    
+    </b>
                     </p>
     
                 </figcaption>
@@ -880,9 +884,9 @@ border-radius: 14px;
                     <h3>The Little Mermaid - Ariel's Hidden Treasures
                     </h3>
     
-                    <p>
+                    <p><b>
                       Play as Ariel and venture under the sea to collect shells which can be traded for treasures untold.
-    
+    </b>
                     </p>
     
                 </figcaption>
