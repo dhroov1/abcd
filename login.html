@@ -346,7 +346,7 @@ top: 50%;
                 <span id="n1" class="w1"></span>
 
 
-                <input type="text" name="mob" id="mob" placeholder="YY-XXXX-XXXXXX" onblur="warn1()" />
+                <input type="text" name="mob" id="mob" placeholder="XXXXXXXXXX" onblur="warn1()" />
                 <span id="m1" class="w1"></span>
 
 
@@ -407,7 +407,7 @@ top: 50%;
         }
         function warn1() {
             var mobile = document.getElementById("mob").value;
-            var pm = /[91]{2}(-)[0-9]{4}(-)[0-9]{6}$/;
+            var pm = /^([0-9]{10})$/g;
             var res2 = pm.test(mobile);
             if (res2) {
                 document.getElementById("m1").innerHTML = "Correct";
