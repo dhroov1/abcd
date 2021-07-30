@@ -35,7 +35,29 @@
     <!-- Javascript files -->
 		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
   
-      
+      <style>
+	      
+	      #demo01 {
+  display: block; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  left: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#demo01:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+	      
+	</style>
 </head>
 <body>
   <div id="loverlay" style="text-align: center;">
@@ -46,6 +68,21 @@
     </div>
   </div>
   <div id="particles-js"></div>
+	
+	<a id="demo01" href="#animatedModal">DEMO01</a>
+
+    <!--DEMO01-->
+    <div id="animatedModal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+        <div class="close-animatedModal"> 
+            CLOSE MODAL
+        </div>
+            
+        <div class="modal-content">
+                  <!--Your modal content goes here-->
+        </div>
+    </div>
+	
     <!-- <div class="topnav" id="myTopnav">
         <a href="#home" class="active2" id="hm">Home</a>
         <a href="#trend">Trending</a>
@@ -199,19 +236,7 @@
 
     <!-- News section -->
     <div class="news" id="newsFeed">
-	    <a id="demo01" href="#animatedModal">DEMO01</a>
-
-    <!--DEMO01-->
-    <div id="animatedModal">
-        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-        <div class="close-animatedModal"> 
-            CLOSE MODAL
-        </div>
-            
-        <div class="modal-content">
-                  <!--Your modal content goes here-->
-        </div>
-    </div>
+	    
       <h1 id="nz">NEWS FEED</h1>
      
       <div class="main">
