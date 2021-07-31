@@ -14,10 +14,7 @@
   
   <link rel="stylesheet" href="userrvw.css">
   <!-- <link rel="stylesheet" href="rvwprg.css"> -->
-    <script
-		src="https://code.jquery.com/jquery-3.4.1.js"
-		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-		crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 	<script>
 		function SubForm (){
 			$.ajax({
@@ -33,6 +30,10 @@
 			});
 		}
 	</script>
+	
+	<script src="https://smtpjs.com/v3/smtp.js"></script>  
+	
+	
 </head>
 <body>
 
@@ -643,6 +644,18 @@ function chntxt(){
 //   }
 //   else{
    SubForm ();
+   Email.send({
+		Host: "smtp.gmail.com",
+		Username : "abcdgames.in@gmail.com",
+		Password : "AbCd@1234",
+		To : email,
+		From : "abcdgames.in@gmail.com",
+		Subject : "ABCD Games - Feedback",
+		Body : "Thank you for giving your valuable feedback! \n It has been submitted successfully. \n We will definitely work on it.",
+	})
+	.then(function(message){
+		alert("mail sent successfully")
+        });
   document.getElementById("m1").innerHTML="Thank You for your feedback!! We will work on it.";
   document.getElementById("c2").click();}
   
