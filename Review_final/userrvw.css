@@ -72,6 +72,11 @@ body{background-color: #d4a4cf;}
         color:#49274A;
     }
 
+input[type=email] {
+        margin-top: 60px;
+        color:#49274A;
+    }
+
     button {
         margin-top: 60px;
         height: 40px;
