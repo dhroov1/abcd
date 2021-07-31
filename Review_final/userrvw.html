@@ -14,7 +14,25 @@
   
   <link rel="stylesheet" href="userrvw.css">
   <!-- <link rel="stylesheet" href="rvwprg.css"> -->
-    
+    <script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/16220/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
 </head>
 <body>
 
@@ -158,14 +176,17 @@
               <div class="formm">
                 <h1 class="rvwh">Give us Your Review</h1>
                
-                
+                <form id="myForm">
                 <label>&emsp;&ensp;&emsp;&emsp;&emsp; Name &nbsp;:</label>
-                <input type="text" id="name1">
+                <input type="text" id="name1" name="name">
+                <br>
+                <label>&emsp;&ensp;&emsp;&emsp;&emsp; Email &nbsp;:</label>
+                <input type="email" id="email" name="email">
                 <br>
                 <label>&emsp;&ensp;&emsp;&emsp;&emsp;Review:</label>
-                <input type="text" id="review1">
+                <input type="text" id="review1" name="comments">
                 <br>
-                
+                 </form>
                 <button class="login-btn" onclick="chntxt()">&nbsp;Send</button>
                 
               </div>
@@ -614,11 +635,13 @@ cta.addEventListener('click', function(e){
 })
 function chntxt(){
   var name=document.getElementById("name1").value;
+  var email = document.getElementById("email1").value;
   var rvwabc=document.getElementById("review1").value;
- if(name=== "" || rvwabc ===""){
+ if(name === "" || rvwabc ==="" || email === ""){
    alert("Please give feedback :)");
   }
   else{
+   SubForm ();
   document.getElementById("m1").innerHTML="Thank You for your feedback!! We will work on it.";
   document.getElementById("c2").click();}
   
