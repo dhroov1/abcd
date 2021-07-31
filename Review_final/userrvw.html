@@ -176,7 +176,7 @@
               <div class="formm">
                 <h1 class="rvwh">Give us Your Review</h1>
                
-                <form id="myForm">
+                <form id="myForm" onsubmit="return chntxt()">
                 <label>&emsp;&ensp;&emsp;&emsp;&emsp; Name &nbsp;:</label>
                 <input type="text" id="name1" name="name" required>
                 <br>
@@ -186,7 +186,7 @@
                 <label>&emsp;&ensp;&emsp;&emsp;&emsp;Review:</label>
                 <input type="text" id="review1" name="comments" required>
                 <br>
-		<input type="submit" class="login-btn" onclick="chntxt()" value="Send" >
+		<input type="submit" class="login-btn" value="Send" >
                  </form>
                
                 
@@ -638,16 +638,16 @@ function chntxt(){
   var name=document.getElementById("name1").value;
   var email = document.getElementById("email1").value;
   var rvwabc=document.getElementById("review1").value;
- if(name === "" || rvwabc ==="" || email === ""){
-   alert("Please give feedback :)");
-  }
-  else{
+//  if(name === "" || rvwabc ==="" || email === ""){
+//    alert("Please give feedback :)");
+//   }
+//   else{
    SubForm ();
   document.getElementById("m1").innerHTML="Thank You for your feedback!! We will work on it.";
   document.getElementById("c2").click();}
   
   // var a=setInterval(function(){ document.getElementById("c2").click(); }, 500);
-}
+// }
 function openme(){
   document.getElementById("c2").click();
 }
