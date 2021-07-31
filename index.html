@@ -43,7 +43,7 @@
   bottom: 50px; /* Place the button at the bottom of the page */
   left: 20px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
-  border: 1px solid white; /* Remove borders */
+  border: 1px dotted white; /* Remove borders */
   outline: none; /* Remove outline */
   background-color: #49274A; /* Set a background color */
   color: white; /* Text color */
@@ -76,7 +76,7 @@
 	<a id="demo01" href="#animatedModal">QUIZ</a>
 
     <!--DEMO01-->
-    <div id="animatedModal" animatedOut="bounceOut" color="#C090BA">
+    <div id="animatedModal" class="animated zoomIn bounceOut" style="background-color: '#C090BA'">
         <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
         <div class="close-animatedModal"> 
             CLOSE MODAL
