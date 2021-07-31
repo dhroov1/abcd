@@ -192,7 +192,7 @@
               <div class="formm">
                 <h1 class="rvwh">Give us Your Review</h1>
                
-                <form id="myForm" method="post">
+                <form id="myForm" method="post" action="javascript:;" onsubmit="sendMail()">
                 <label>&emsp;&ensp;&emsp;&emsp;&emsp; Name &nbsp;:</label>
                 <input type="text" id="name1" name="name" required>
                 <br>
@@ -202,7 +202,7 @@
                 <label>&emsp;&ensp;&emsp;&emsp;&emsp;Review:</label>
                 <input type="text" id="review1" name="comments" required>
                 <br>
-		<input type="submit" class="login-btn" onclick="sendMail()" value="Send" >
+		<input type="submit" class="login-btn" value="Send" >
                  </form>
                
                 
