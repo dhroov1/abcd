@@ -29,18 +29,31 @@
 					alert("There was an error :(")
 				}
 			});
-			Email.send({
-		Host: "smtp.gmail.com",
-		Username : "abcdgames.in@gmail.com",
-		Password : "AbCd@1234",
-		To : 'aroradhroov@gmail.com',
-		From : "abcdgames.in@gmail.com",
-		Subject : "ABCD Games - Feedback",
-		Body : "Thank you for giving your valuable feedback! \n It has been submitted successfully. \n We will definitely work on it.",
-	})
-	.then(function(message){
-		alert("mail sent successfully")
-        });
+			
+			
+			$.ajax({
+  type: “POST”,
+  url: “https://mandrillapp.com/api/1.0/messages/send.json”,
+  data: {
+    ‘key’: ‘_Q4j1YZtpOC4eBvo_NwI9A’,
+    ‘message’: {
+      ‘from_email’: ‘abcdgames.in@gmail.com’,
+      ‘to’: [
+          {
+            ‘email’: ‘aroradhroov@gmail.com’,
+            ‘type’: ‘to’
+          },
+        ],
+      ‘autotext’: ‘true’,
+      ‘subject’: ‘YOUR SUBJECT HERE!’,
+      ‘html’: ‘YOUR EMAIL CONTENT HERE! YOU CAN USE HTML!’
+    }
+  }
+ }).done(function(response) {
+   console.log(response); // if you're into that sorta thing
+   alert("mail sent successfully")
+ });
+			
 		}
 	</script>
 	
