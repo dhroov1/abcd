@@ -14,6 +14,7 @@
   
   <link rel="stylesheet" href="userrvw.css">
   <!-- <link rel="stylesheet" href="rvwprg.css"> -->
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 	<script>
 		function SubForm (){
@@ -28,10 +29,22 @@
 					alert("There was an error :(")
 				}
 			});
+			Email.send({
+		Host: "smtp.gmail.com",
+		Username : "abcdgames.in@gmail.com",
+		Password : "AbCd@1234",
+		To : 'aroradhroov@gmail.com',
+		From : "abcdgames.in@gmail.com",
+		Subject : "ABCD Games - Feedback",
+		Body : "Thank you for giving your valuable feedback! \n It has been submitted successfully. \n We will definitely work on it.",
+	})
+	.then(function(message){
+		alert("mail sent successfully")
+        });
 		}
 	</script>
 	
-	<script src="https://smtpjs.com/v3/smtp.js"></script>  
+	  
 	<script type="text/javascript">
     function sendEmail() {
       Email.send({
@@ -192,7 +205,7 @@
               <div class="formm">
                 <h1 class="rvwh">Give us Your Review</h1>
                
-                <form id="myForm" action="javascript:;" onsubmit="sendMail()" method="post" >
+                <form id="myForm" action="javascript:;" onsubmit="chntxt()" method="post" >
                 <label>&emsp;&ensp;&emsp;&emsp;&emsp; Name &nbsp;:</label>
                 <input type="text" id="name1" name="name" required>
                 <br>
