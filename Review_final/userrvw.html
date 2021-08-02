@@ -40,7 +40,7 @@
 					// SUCCESS
 					res.json().then(data=>{
 					const yourData = data
-					console.log(data.data[0]);
+					console.log(data.data[0].name);
 					}).catch(err => console.log(err))
 				}
 				else{
