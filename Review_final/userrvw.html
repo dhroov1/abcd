@@ -41,6 +41,10 @@
 					res.json().then(data=>{
 					const yourData = data
 					console.log(data.data[0].name);
+						for(int i= data.data.length-1; i>=0;i--)
+						{
+							addCommentBox(data.data[i].name, data.data[i].comments);
+						}
 					}).catch(err => console.log(err))
 				}
 				else{
@@ -68,7 +72,15 @@
         });
     }
   </script>
-	
+	<style>
+		
+		.recent-feedback-text {
+			border: 1px solid #49274A; 
+			border-radius: 20px;
+			padding: 15px;
+		}
+		
+	</style>
 </head>
 <body>
 
@@ -322,14 +334,7 @@
 	<div class="progress-section">
         <div class="heading">Recent Feedbacks:</div>
         <div class="container" id=""recent-feedback>
-		<p style="border: 1px solid #49274A; border-radius: 20px;">Name: <br>
-		Comment: </p>
 		
-		<p style="border: 1px solid #49274A; border-radius: 20px;">Name: <br>
-		Comment: </p>
-		
-		<p style="border: 1px solid #49274A; border-radius: 20px;">Name: <br>
-		Comment: </p>
 	</div>
       
     </div>
@@ -727,6 +732,20 @@ function openme(){
 		window.onload = function() {
   			ReadForm();
 		};
+		
+	</script>
+	
+	<script>
+		
+		function addCommentBox(name, comments) {
+    
+    const feedbackBox = document.createElement('p');
+    feedbackBox.innerHTML = 'Name: name<br>Comment: comments';
+    feedbackBox.className = 'recent-feedback-text';
+    const wrapDiv = document.getElementById('recent-feedback');
+    wrapDiv.appendChild(feedbackBox);
+    
+}
 		
 	</script>
 
