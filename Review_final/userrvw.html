@@ -41,7 +41,7 @@
 					res.json().then(data=>{
 					const yourData = data
 					console.log(data.data[0].name);
-						for(int i= data.data.length-1; i>=0;i--)
+						for(let i= data.data.length-1; i>=0;i--)
 						{
 							addCommentBox(data.data[i].name, data.data[i].comments);
 						}
@@ -740,7 +740,7 @@ function openme(){
 		function addCommentBox(name, comments) {
     
     const feedbackBox = document.createElement('p');
-    feedbackBox.innerHTML = 'Name: name<br>Comment: comments';
+    feedbackBox.innerHTML = 'Name: '+name+'<br>Comment: '+comments;
     feedbackBox.className = 'recent-feedback-text';
     const wrapDiv = document.getElementById('recent-feedback');
     wrapDiv.appendChild(feedbackBox);
