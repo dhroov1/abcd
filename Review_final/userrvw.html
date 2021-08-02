@@ -23,7 +23,11 @@
 				type:"post",
 				data:$("#myForm").serializeArray(),
 				success: function(){
-					alert("Form Data Submitted :)")
+					alert("Feedback Submitted :)")
+					setTimeout(function () {
+        					alert('Reloading page to fetch latest feedback...');
+        					location.reload(true);
+      					}, 2000);
 				},
 				error: function(){
 					alert("There was an error :(")
