@@ -29,32 +29,26 @@
 					alert("There was an error :(")
 				}
 			});
-			
-			
-			$.ajax({
-  type: “POST”,
-  url: “https://mandrillapp.com/api/1.0/messages/send.json”,
-  data: {
-    ‘key’: ‘_Q4j1YZtpOC4eBvo_NwI9A’,
-    ‘message’: {
-      ‘from_email’: ‘abcdgames.in@gmail.com’,
-      ‘to’: [
-          {
-            ‘email’: ‘aroradhroov@gmail.com’,
-            ‘type’: ‘to’
-          },
-        ],
-      ‘autotext’: ‘true’,
-      ‘subject’: ‘YOUR SUBJECT HERE!’,
-      ‘html’: ‘YOUR EMAIL CONTENT HERE! YOU CAN USE HTML!’
-    }
-  }
- }).done(function(response) {
-   console.log(response); // if you're into that sorta thing
-   alert("Email sent successfully")
- });
-			
+				
 		}
+	</script>
+	<script>
+		
+		function ReadForm (){
+			fetch("https://api.apispreadsheets.com/data/16376/").then(res=>{
+				if (res.status === 200){
+					// SUCCESS
+					res.json().then(data=>{
+					const yourData = data
+					console.log(data);
+					}).catch(err => console.log(err))
+				}
+				else{
+					// ERROR
+				}
+			});
+		}
+		
 	</script>
 	
 	  
@@ -708,7 +702,14 @@ function openme(){
 
       }(jQuery))
     </script>
-    
+
+	<script>
+		
+		window.onload = function() {
+  			ReadForm();
+		};
+		
+	</script>
 
 </body>
 </html>
