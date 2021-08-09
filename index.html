@@ -36,6 +36,18 @@
 		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
   
       <style>
+	      #navbar{
+          /* overflow:hidden; */
+z-index: 23;
+        }
+        .sticky1{
+          top: 0;
+  width: 100%;
+          position: fixed;
+        }
+        .sticky1 + .content{
+          padding-top: 60px;
+        }
 	      
 	      #demo01 {
   display: block; /* Hidden by default */
@@ -120,6 +132,7 @@
         <a href="#about">About</a>
         <button class="b1"><i class="fas fa-search"></i></button>
         <input type="text" placeholder="Search.. "> -->
+	<div id="navbar">
         <div class="container yellow">
           <!-- <div class="abcdlogo"></div> -->
           <!-- <img src="abcdlogo.jpeg"  class="abcdlogo"/> -->
@@ -144,7 +157,7 @@
           <a class="pullRight" href="/Beyond_The_Blogs_BhavneetKaur/Beyond_The_BLogs_BY_BHAVNEET/index.html">BLOGS</a>
         </div>
         
-
+	</div>
        
     </div>
     <!-- <div id="particles-js"></div> -->
@@ -807,7 +820,23 @@
         <script type="text/javascript" src="jquery.slicebox.js"></script>
         <script type="text/javascript" src="sl2.js"></script>
         <script type="text/javascript" src="jquery.swatchbook.js"></script>
+	<script>
+          window.onscroll = function() {myFunction()};
+          
+          var navbar = document.getElementById("navbar");
+          var sticky1 = navbar.offsetTop;
+          
+          function myFunction() {
+            if (window.pageYOffset >= sticky1) {
+              navbar.classList.add("sticky1")
+            } else {
+              navbar.classList.remove("sticky1");
+            }
+          }
+          </script>
 <script type="text/javascript">
+	
+	
   $(function() {
   
     $( '#sb-container' ).swatchbook( {
@@ -894,7 +923,7 @@ function openCat(){
 </script>
 
 <script>
-	function myFunction() {
+	function myFunction1() {
     alert("Please Login First!");
 }
 </script>
