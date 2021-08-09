@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/bloglist.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+</head>
+<body>
+  <header>
+    <a  class="logo-title">Beyond The Blogs <i class="fas fa-comments"></i></a>
+    
+        
+        <p class="middleText">Awaken the writer within you and let your thoughts reach millions :)</p>
+        <div class="user">
+        <i class="fas fa-user" id="us"></i>
+        <br>
+        <span id="nm"></span></div>
+      </header>
+    <div class="par">
+    <div class="rectangle r1">
+      <h1 id="w1">JOT</h1>
+      <div class="blog_post_content">
+      <span onclick="func1()" class="cross"><i class="fa fa-trash" aria-hidden="true" id="d1"></i></span>
+      <h3 id="t1">Why to play games?</h3>
+      <p id="c1">Earlier was a time when people think that those who play games never succeed in life but nowadays games have become an important aspect of our life and many people even make their career in games.So games are important.</p>
+      <a href="post1.html" class="u"><i  class="fa fa-ellipsis-h" onclick="p1()"></a></i>
+      </div>
+      </div>
+    <div class="rectangle r2">
+      <h1 id="w2">RIYA</h1>
+      <div class="blog_post_content">
+      <span onclick="func2()"class="cross"><i class="fa fa-trash" id="d2" aria-hidden="true"></i></span>
+      <h3 id="t2">Tips for Valorant Players</h3>
+      <p id="c2">If you are an attacker, your goal is to put down the defenders or plant/detonate the spike. If you are a defender, you need to take out the attackers or stall them long enough. If they plant the spike, you can defuse the planted spike to win the round as well. You have only 100 seconds to execute your plan, so communication is key.</p>
+      <a href="post2.html" class="u"><i  class="fa fa-ellipsis-h"  onclick="p2()"></a></i>
+      </div>
+      </div>
+
+      <div class="rectangle r3">
+        <h1 id="w3">SUNJOT</h1>
+        <div class="blog_post_content">
+        <span onclick="func3()"class="cross"><i class="fa fa-trash" id="d3" aria-hidden="true"></i></span>
+        <h3 id="t3">Bgmi Update </h3>
+        <p id="c3">The BGMI 1.5 update will pack a host of new features and improvements. Krafton has released a new BGMI video that shows the changes that BR gamers will witness with the fresh update.</p>
+        <a href="post3.html" class="u"><i  class="fa fa-ellipsis-h"  onclick="p3()"></a></i>
+        </div>
+        </div>
+        <div class="rectangle r4">
+          <h1 id="w4">DIVYAM</h1>
+          <div class="blog_post_content">
+          <span onclick="func4()"class="cross"><i class="fa fa-trash" id="d4" aria-hidden="true"></i></span>
+          <h3 id="t4">My 2 Years in Live streaming</h3>
+          <p id="c4">For 2 years I have been livestreaming on youtube, and really these were the best of my life as I have learnt a lot from it.It made me more confident,disciplined and specially famous and I ahve started earning money also. </p>
+          <a href="post4.html" class="u"><i  class="fa fa-ellipsis-h"  onclick="p4()"></a></i>
+          </div>
+          </div>
+
+          <div id="p5" class="rectangle r5"  >
+            <h1 id="w5"></h1>
+            <div class="blog_post_content">
+            <span onclick="func5()"class="cross"><i class="fa fa-trash" id="d5"  aria-hidden="true"></i></span>
+            <h3  id="t5"></h3>
+            <p  id="c5"></p>
+            <!-- <a href="post.html" class="u"><i  class="fa fa-ellipsis-h"></a></i> -->
+            </div>
+            </div>
+        </div>
+</body>
+<script src="../js/header.js"></script>
+<script src="../js/bloglist.js"></script>
+<script>
+  window.addEventListener("load",()=>{
+    
+   
+    var firstname=sessionStorage.getItem('name');
+    var title22=sessionStorage.getItem('title22');
+    var content33=sessionStorage.getItem('content33');
+    document.getElementById('w5').innerHTML=firstname;
+    document.getElementById('t5').innerHTML=title22;
+    document.getElementById('c5').innerHTML=content33;
+    if(title22 !=null){
+    document.getElementById("p5").style.display="block";}
+    // alert(document.getElementById("t4").value);
+    if(firstname !=null){
+    document.getElementById("nm").innerHTML=firstname;}
+    if(firstname ==null){document.getElementById("nm").innerHTML="&ensp;GUEST";}
+    var cond=sessionStorage.getItem('cond');
+    if(cond==1){
+    var newc1=sessionStorage.getItem('newc1');
+    var newt1=sessionStorage.getItem('newt1');                
+    document.getElementById('c1').innerHTML=newc1;
+    document.getElementById('t1').innerHTML=newt1;
+    }
+    var cond=sessionStorage.getItem('cond');
+    if(cond==2){
+    var newc2=sessionStorage.getItem('newc2');
+    var newt2=sessionStorage.getItem('newt2');                
+    document.getElementById('c2').innerHTML=newc2;
+    document.getElementById('t2').innerHTML=newt2;
+  
+  }
+  if(cond==3){
+    var newc3=sessionStorage.getItem('newc3');
+    var newt3=sessionStorage.getItem('newt3');                
+    document.getElementById('c3').innerHTML=newc3;
+    document.getElementById('t3').innerHTML=newt3;
+  
+  }
+  if(cond==4){
+    var newc4=sessionStorage.getItem('newc4');
+    var newt4=sessionStorage.getItem('newt4');                
+    document.getElementById('c4').innerHTML=newc4;
+    document.getElementById('t4').innerHTML=newt4;
+  
+  }
+                  
+   
+   
+});
+function func1(){
+  document.getElementsByClassName("r1")[0].style.display="none";
+}
+function func2(){
+  document.getElementsByClassName("r2")[0].style.display="none";
+}
+function func3(){
+  document.getElementsByClassName("r3")[0].style.display="none";
+}
+function func4(){
+  document.getElementsByClassName("r4")[0].style.display="none";
+}
+function func5(){
+  document.getElementsByClassName("r5")[0].style.display="none";
+}
+function p1(){
+  
+       var w1=document.getElementById("w1").innerHTML; 
+     console.log(w1);
+     
+     sessionStorage.setItem("w1", w1);
+     var t1=document.getElementById("t1").innerHTML; 
+     console.log(t1);
+     sessionStorage.setItem("t1", t1);
+     var c1=document.getElementById("c1").innerHTML; 
+     console.log(c1);
+     sessionStorage.setItem("c1", c1);
+     
+     //alert("post1");
+     }
+
+function p2(){
+  
+  var w2=document.getElementById("w2").innerHTML; 
+
+
+sessionStorage.setItem("w2", w2);
+var t2=document.getElementById("t2").innerHTML; 
+
+sessionStorage.setItem("t2", t2);
+var c2=document.getElementById("c2").innerHTML; 
+
+sessionStorage.setItem("c2", c2);
+
+//alert("post2");
+}
+function p3(){
+  
+  var w3=document.getElementById("w3").innerHTML; 
+
+
+sessionStorage.setItem("w3", w3);
+var t3=document.getElementById("t3").innerHTML; 
+
+sessionStorage.setItem("t3", t3);
+var c3=document.getElementById("c3").innerHTML; 
+
+sessionStorage.setItem("c3", c3);
+
+//alert("post1");
+ }
+ function p4(){
+  
+  var w4=document.getElementById("w4").innerHTML; 
+
+
+sessionStorage.setItem("w4", w4);
+var t4=document.getElementById("t4").innerHTML; 
+
+sessionStorage.setItem("t4", t4);
+var c4=document.getElementById("c4").innerHTML; 
+
+sessionStorage.setItem("c4", c4);
+
+
+}
+</script>
+</html>

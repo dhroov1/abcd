@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/post.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    
+          <div class="blogContent">
+               <div id="blogTitle" class="blogTite">
+                   <h1 id="blogTitleNew"></h1>
+                   <center><input type="text" id="titleArea" ></input></center>
+              </div>
+              <div class="Author">
+                  <p id="wr"></p>      
+                  <a href=# id="edit" onclick="changeText()"><div id="text"> Edit</div><div id="text2"><i class="fas fa-edit"></i></div></a>   
+                
+            </div>
+            <div class="desc">
+                <p id="desc1">
+                </p>
+                <textarea id="textarea" style="display: none "></textarea>
+            </div>
+            
+                <a href=# onclick="liker2()" id="edit" style="width: 90px" class="liker">       <div id="text"> <i class="fas fa-thumbs-up"></i> </div>      <div id="text22" class="likeText">Like</div>       </a>
+                <p id="like6">Be the first one to like this!</p>
+                <div id="commentBox" style="display: none">
+                    <textarea id="cmntText" placeholder="Leave a comment..." style="height: 85px; width: 40%"></textarea><br>
+                    <button onclick="cmnt2()">Comment</button>
+                    <B><p>All Comments</p></B>
+                          <div id="commentArea" style="width: 45%; background-color: #3a1b36; height: auto; padding: 10px ;display: none">
+                            
+                          </div>	
+                </div>
+                <p id="temp" style="display: none;"><i class="fa fa-floppy-o"></i></p>
+		            <p id="temp2" style="display: none;"><i class="fas fa-edit"></i></p>
+                <!-- <script src="..\js\post.js"></script>
+                <script src="..\js\header.js"></script> -->
+                <script>window.addEventListener("load",()=>{
+                  var w2=sessionStorage.getItem('w2');
+                  var t2=sessionStorage.getItem('t2');
+                  var c2=sessionStorage.getItem('c2');
+                 
+                //   console.log(w1);
+                //   console.log(t1);
+                //   console.log(c1);
+                  document.getElementById('wr').innerHTML=w2;
+                  document.getElementById('blogTitleNew').innerHTML=t2;
+                  document.getElementById('desc1').innerHTML=c2;});
+                  var like=0;
+    var flag=0;
+    function newP2(){
+        var cond=1;
+      sessionStorage.setItem("cond", cond);
+      
+        var newc2=document.getElementById("desc1").innerHTML; 
+      console.log(newc2);
+      
+      sessionStorage.setItem("newc2", newc2);
+      var newt2=document.getElementById("blogTitleNew").innerHTML; 
+      console.log(newt2);
+      sessionStorage.setItem("newt2", newt2);
+      var cond=2;
+      sessionStorage.setItem("cond", cond);
+      
+      
+      
+      window.open('bloglist.html','_self');
+      
+      }
+    function changeText()
+    {
+    if(flag==0)
+    {
+         var x=document.getElementById("temp").innerHTML;
+        var title=document.getElementById('blogTitleNew').innerHTML;
+        document.getElementById('blogTitleNew').style.display="none";
+        document.getElementById('titleArea').value=title;
+        document.getElementById('titleArea').style.display="block";
+        
+        document.getElementById("text").innerHTML='Save';
+          //document.getElementById("text").addEventListener('click',newP1);
+        document.getElementById("text2").innerHTML=x;
+        
+        var desc=document.getElementById('desc1').innerHTML;
+        document.getElementById('textarea').value=desc;
+        document.getElementById('desc1').style.display="none";
+        document.getElementById('textarea').style.display="block";
+        document.getElementById("textarea").style.width="95%";
+        document.getElementById("textarea").style.height="260px";
+        //document.getElementById("text").addEventListener('click',newP1);
+        flag=1;
+    }
+    else
+    {
+        var d=document.getElementById("temp2").innerHTML;
+        document.getElementById("text").innerHTML='Done';
+        document.getElementById("text2").innerHTML=d;
+        var title1=document.getElementById('titleArea').value;
+        document.getElementById('blogTitleNew').innerHTML=title1;
+        document.getElementById('titleArea').style.display="none";
+        document.getElementById('blogTitleNew').style.display="block";
+        var desc111=document.getElementById('textarea').value;
+        document.getElementById('desc1').innerHTML=desc111;
+        document.getElementById('desc1').style.display="block";
+        document.getElementById('textarea').style.display="none";
+        document.getElementById("text").addEventListener('click',newP2);
+        flag=0;
+    }
+    }
+    function liker2()
+    {
+        like++;
+    document.getElementsByClassName('likeText')[0].innerHTML="Liked!";
+    if(like==1)
+    {
+        document.getElementById('like6').innerHTML=like+" person likes this!";
+    }
+    else
+    {
+        document.getElementById('like6').innerHTML=like+" people have liked this!";
+    }
+    document.getElementById('commentBox').style.display="block";
+    }
+    function cmnt2()
+    {
+       
+        var p=document.getElementById('commentArea').style.display="block";
+        var e=document.getElementById('commentArea').innerHTML;
+        var data=document.getElementById('cmntText').value;
+        document.getElementById('commentArea').innerHTML="<p style='background-color:white; margin:10px; padding-top:11px;height:35px;'>"+data+"</p>"+e;
+        document.getElementById('cmntText').value=" ";
+        //document.getElementById('cmntText').innerHTML=" ";
+        
+    }
+    
+                 
+                  </script>
+            </body>
+            </html>
+            </div>
+
+    
+
+<!-- <script src="../js/header.js"></script> -->
+<!-- <script src="../js/post.js"></script> -->
+
+
+</html>
